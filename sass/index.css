@@ -1,0 +1,308 @@
+/*GENERAL*/
+:root {
+  --main-color: white;
+  --second-color: #EAEAEA;
+  --drak-grey-color: #353535;
+  --pink: #FF79DA;
+  --purple: #9356DC;
+}
+
+.headerTextContent {
+  background-color: #EAEAEA;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+}
+
+.headerTextContent h2 {
+  font-size: 16px;
+  line-height: 18.75px;
+  color: #353535;
+}
+
+.headerTextContent {
+  display: flex;
+}
+
+.header-white {
+  width: 375px;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.headerTextConten,
+img,
+h2 {
+  display: flex;
+  padding: 7px;
+}
+
+.header-white img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 80px;
+}
+
+.header-white img {
+  width: 162px;
+  height: 44px;
+  left: 16px;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.display-flex-white {
+  background-color: white;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.section-background-color {
+  background-color: #F6F6F6;
+}
+
+.section-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #F6F6F6;
+}
+
+.numero {
+  position: absolute;
+  top: calc(50% - 12px);
+  left: -12px;
+  background-color: #9356DC;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.image-directionColumn {
+  width: 346px;
+  height: 231px;
+  top: -57px;
+  left: -3px;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.directionColumn h2,
+h3 {
+  margin: 0.5px;
+  margin-left: 10px;
+}
+
+.directionColumn h3 {
+  font-weight: normal;
+  size: 17px;
+  line-height: 19.92px;
+}
+
+.dierction-absolut {
+  position: absolute;
+  padding: 20px;
+}
+
+.insertion {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.display-flex {
+  display: flex;
+}
+
+section {
+  padding: 50px;
+}
+
+h2,
+h3 {
+  font-family: "roboto", sans-serif;
+  font-style: normal;
+}
+
+p {
+  font-size: 18px;
+  line-height: 21.09px;
+  font-family: "roboto", sans-serif;
+  color: #353535;
+}
+
+header .headerTextContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: "roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28.13px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-family: "roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21.09px;
+  display: flex;
+  justify-content: center;
+  align-items: center var(--drak-grey-color) #353535;
+}
+
+.button-violet {
+  width: 218px;
+  height: 50px;
+  left: 82px;
+  top: 50px;
+  background-color: violet;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 25px;
+  box-sizing: border-box;
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.75px;
+  color: white;
+  align-items: center;
+  text-decoration: none;
+}
+
+.button-logo-mobile,
+.button-menu,
+.button-restaurant {
+  color: black;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.75px;
+  border-style: solid;
+  border-color: #F6F6F6;
+  border-width: 2px;
+  border-radius: 20px;
+  width: 322.49px;
+  height: 72.38px;
+  text-align: center;
+  background-color: #F6F6F6;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+}
+
+.button-logo-mobile-un,
+.button-menu-deux,
+.button-restaurant-trois {
+  width: 18px;
+  height: 17.91px;
+  top: 726.29px;
+  left: 68px;
+}
+
+.button-white,
+.button-logo-mobile-un,
+.button-menu-deux,
+.button-restaurant-trois {
+  display: flex;
+}
+
+.button-white,
+.button-violet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  margin-left: 20px;
+}
+
+.button-logo-mobile-un .button-logo-mobile {
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 19px;
+  gap: 10px;
+}
+
+.display-flex img {
+  width: 22px;
+  height: 21px;
+  border: 1px;
+}
+
+.directionColumn .image-directionColumn {
+  margin: 5px;
+}
+
+footer {
+  background-color: #353535;
+}
+
+.footer-image h3 {
+  color: white;
+  width: 400;
+  font-size: 16px;
+  line-height: 18.75px;
+  gap: 7px;
+  font-weight: normal;
+}
+
+.footer-image-Proposer-un-restaurant,
+.footer-image-images-partenaire {
+  display: flex;
+  color: white;
+}
+
+.footer-image-Proposer-un-restaurant,
+.footer-image-images-partenaire,
+h3 {
+  font-family: "roboto", sans-serif;
+  font-style: normal;
+  size: 16px;
+  line-height: 18.75px;
+  gap: 7px;
+}
+
+.mise-en-page {
+  padding: 30px;
+}
+
+.logo-footer-white {
+  width: 139px;
+  height: 27px;
+  color: white;
+}
+
+/* .mise-en-page {
+	top: 2066px;
+	padding:22px, 25px, 22px, 25px ;
+	gap: 16px;
+
+} */
+main {
+  gap: 15px;
+}/*# sourceMappingURL=index.css.map */
