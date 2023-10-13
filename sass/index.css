@@ -13,33 +13,35 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
+  font-family: "Roboto", sans-serif;
 }
 
 /* header */
 .headerTextContent {
   background-color: #EAEAEA;
-  box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 15%) inset;
+  box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.15) inset;
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
+
 .headerTextConten img {
   display: block;
-  background: red;
 }
 
-.headerTextContent  span {
+.headerTextContent,
+span {
   font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-weight: 570;
   color: #353535;
-  display: block;
-  background: blue;
-  
-
-
 }
 
-
+.headerTextContent img {
+  padding-top: 17px;
+}
 
 .header-white {
   display: flex;
@@ -50,7 +52,7 @@ body {
 
 .headerTextConten,
 img,
-h2 {
+span {
   display: flex;
   padding: 7px;
 }
@@ -61,7 +63,6 @@ h2 {
   justify-content: center;
   height: 36px;
 }
-
 
 /* Main */
 main {
@@ -87,6 +88,10 @@ p,
   padding-top: 0;
 }
 
+.section-button h1 {
+  padding-top: 20px;
+}
+
 .section-button .button-violet {
   display: flex;
   align-items: center;
@@ -102,11 +107,8 @@ p,
   left: 82px;
   top: 50px;
   background: linear-gradient(to bottom, var(--pink), var(--purple));
-  border-style: solid;
-  border-width: 2px;
   border-radius: 25px;
   box-sizing: border-box;
-  font-family: "roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -115,8 +117,23 @@ p,
   align-items: center;
   text-decoration: none;
   margin-top: 20px;
+  border: none;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
+.button-violet:hover,
+.button-violet:focus {
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.35);
+}
+
+.section-button p {
+  font-family: "Roboto", system-ui;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21.09px;
+  letter-spacing: 0em;
+  text-align: center;
+}
 
 /* sectionwhitebackground */
 .sectionwhitebackground .button-white {
@@ -124,7 +141,13 @@ p,
 }
 
 .sectionwhitebackground h2 {
-  margin-left: 15px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-left: 20px;
+  padding-bottom: 18px;
 }
 
 .button-white,
@@ -152,6 +175,12 @@ p,
   font-weight: bolder;
 }
 
+.button-logo-mobile img,
+.button-menu img,
+.button-restaurant img {
+  margin-left: 4rem;
+}
+
 .button-white {
   display: flex;
   flex-direction: column;
@@ -164,11 +193,9 @@ p,
   position: relative;
   display: flex;
   align-items: center;
-  gap: 25px;
 }
 
 .numero {
-  font-family: "roboto", sans-serif;
   position: absolute;
   top: calc(50% - 12px);
   left: -12px;
@@ -183,16 +210,17 @@ p,
 }
 
 .texte-noir {
-  font-family: "roboto", sans-serif;
   color: #000000;
   text-decoration: none;
   font-size: 16px;
   font-weight: 500px;
   line-height: 18.75px;
+  padding-right: 80px;
+  white-space: nowrap;
+  text-align: left;
 }
 
 /* Section : restaurants section-background-color */
-
 .restaurants {
   display: flex;
   flex-direction: column;
@@ -200,11 +228,9 @@ p,
   margin: 0;
 }
 
-.restaurants h3 {
-  font-family: "roboto", sans-serif;
-  size: 17px;
-  font-weight: lighter;
-  color: #000000;
+.flex-direction,
+.flex-direction-deux {
+  padding-left: 25px;
 }
 
 .restaurants {
@@ -214,16 +240,14 @@ p,
 .restaurants,
 h1 {
   align-items: flex-start;
-  margin-bottom: -20px;
+  margin-bottom: -30px;
 }
 
 .restaurants h1 {
-  margin-left: 15px;
+  padding-left: 38px;
+  padding-top: 5px;
 }
 
-/* .section-background-color {
-background-color: #F6F6F6;
- } */
 .restaurants {
   background-color: #F6F6F6;
 }
@@ -232,18 +256,44 @@ background-color: #F6F6F6;
   margin: auto;
 }
 
+.heart,
+.heart-violet {
+  width: 22px;
+  height: 21px;
+  top: 15px;
+  left: 312px;
+}
+
+.display-flex {
+  position: relative;
+}
+
+.heart,
+.heart-violet {
+  position: absolute;
+  right: 0;
+  padding-bottom: 55px;
+  padding-left: 135px;
+}
+
+.heart-violet {
+  opacity: 0;
+  transition-duration: 1s;
+}
+
+.heart-violet:active,
+.heart-violet:hover,
+.heart-violet .selected {
+  opacity: 1;
+}
+
 .directionColumn,
 .image-directionColumn {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-}
-
-.direirectionColumn .image-directionColumn {
-  margin: 5px;
- 
-  
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .directionColumn {
@@ -254,35 +304,32 @@ background-color: #F6F6F6;
   position: relative;
 }
 
-.directionColumn h2,
-h3 {
+.directionColumn .h-deux,
+.h-trois {
   margin: 0.5px;
   margin-left: 7px;
 }
 
-.directionColumn h3 {
-  font-weight: normal;
-  size: 17px;
-  line-height: 19.92px;
-}
-
-.directionColumn h2,
-.directionColumn h3 {
-  margin: 17px;
-  margin-right: 80px;
-}
-
 .directionColumn,
-.display-flex-white h2,
-.display-flex-white h3 {
+.display-flex-white .h-deux,
+.display-flex-white .h-trois {
   display: flex;
   align-items: stretch;
   margin: 0;
+  text-decoration: none;
+  margin: -30px;
 }
 
 .directionColumn,
-.display-flex-white h3 {
-  margin-left: 8px;
+.display-flex-white .h-trois {
+  padding-left: 25px;
+  padding-bottom: 25px;
+}
+
+.display-flex-white .h-trois {
+  size: 17px;
+  font-weight: 300;
+  color: #000000;
 }
 
 .nouveau {
@@ -292,7 +339,7 @@ h3 {
 }
 
 .image-directionColumn {
-  width: 346px;
+  width: 498.65px;
   height: 231px;
   top: -57px;
   left: -3px;
@@ -305,28 +352,37 @@ h3 {
 }
 
 .display-flex-white,
-h2 h3 {
+.h-deux .h-trois {
   padding-left: 20px;
 }
 
 .display-flex {
   display: flex;
   justify-content: space-between;
-
 }
 
-.display-flex,
-h2 {
-  font-family: "roboto", sans-serif;
-  size: 18px;
+.h-deux {
   line-height: 21.09px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-top: 1px;
+  padding: 10px;
+  padding-left: 20px;
+  text-decoration: none;
+  color: #000000;
 }
 
-.display-flex img {
-  width: 22px;
-  height: 21px;
-  border: 1px;
-  margin-right: 15px;
+.display-flex-white .h-trois {
+  font-size: 0.9em;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+  padding-bottom: 10px;
+  text-decoration: none;
+  padding-bottom: 25px;
 }
 
 .directionColumn .image-directionColumn,
@@ -339,9 +395,15 @@ h2 {
   padding: 10px;
 }
 
+.display-flex,
+.h-deux .h-trois {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
 /* H1-H2-H3-P */
 h1 {
-  font-family: "roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -349,21 +411,13 @@ h1 {
   color: black;
 }
 
-h2,
-h3 {
-  font-family: "roboto", sans-serif;
-  font-style: normal;
-}
-
 p {
   font-size: 18px;
   line-height: 21.09px;
-  font-family: "roboto", sans-serif;
   color: #353535;
 }
 
 p {
-  font-family: "roboto", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -374,17 +428,17 @@ p {
 /* Footer */
 footer {
   background-color: #353535;
+  padding-left: 9rem;
 }
 
 .footer-image-Proposer-un-restaurant h3,
-.footer-partenaire h3,
-.footer-image h3 {
+.footer-partenaire h3 {
   color: white;
   width: 400;
   font-size: 16px;
   line-height: 18.75px;
   gap: 7px;
-  font-weight: normal;
+  font-weight: 500px;
 }
 
 .footer-image-Proposer-un-restaurant,
@@ -413,7 +467,6 @@ img h3 {
 .footer-image-Proposer-un-restaurant,
 .footer-partenaire,
 h3 {
-  font-family: "roboto", sans-serif;
   font-style: normal;
   size: 16px;
   line-height: 18.75px;
@@ -433,7 +486,12 @@ h3 {
 }
 
 .footer-image h3 {
-
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
   padding: 4px;
 }
 
@@ -450,34 +508,4 @@ img {
   width: 139px;
   height: 27px;
   color: white;
-}
-
-/* .mise-en-page {
- top: 2066px;
- padding:22px, 25px, 22px, 25px ;
- gap: 16px;
-
-} */
-/* .footer-image-Proposer-un-restaurant , img , h3 {
-display: flex;
-color: white;
- } */
-
-/* .button-logo-mobile-un,
- .button-menu-deux,
- .button-restaurant-trois {
-width: 18px;
-height: 17.91px;
-top: 726.29px;
-left: 68px;
- } */
-/* .button-logo-mobile-un .button-logo-mobile {
-flex: none;
-order: 1;
-flex-grow: 0;
-flex-direction: row;
-align-items: center;
-padding: 4px 19px;
-gap: 10px;
- } */
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */

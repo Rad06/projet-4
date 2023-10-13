@@ -1,0 +1,462 @@
+/*GENERAL*/
+:root {
+    --main-color: white;
+    --second-color: #EAEAEA;
+    --drak-grey-color: #353535;
+    --pink: #FF79DA;
+    --purple: #9356DC;
+}
+
+/* Container */
+
+.container {
+
+    //     width: Hug (375px);
+    // height: Hug (1,275px) ;
+    // top: 315px;
+    // gap: 40px;
+
+}
+
+/* Body */
+
+body {
+
+    
+    // margin: 0 auto;
+    // display: flex;
+    // justify-content: center;
+    background-color: #F6F6F6;
+
+
+
+
+
+}
+
+/* header */
+.header-white {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    position: relative;
+}
+
+
+.header-white img {
+    width: 197px;
+    height: 36px;
+    top: 14px;
+    left: 89px;
+    padding: 0px, 19px, 0px, 16px;
+    gap: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    height: 36px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+
+
+
+}
+
+.header-white .idd {
+    width: 17px;
+    height: 16px;
+    position: absolute;
+    top: 5px;
+    left: 25px
+}
+
+.header-white,
+.idd,
+img {}
+
+//    main
+
+
+
+
+// img
+
+.restaurant-le-jay {
+    width: 375px;
+    height: 275px;
+    top: 63px;
+    object-fit: cover;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+
+}
+
+
+// section .titre
+
+.titre {
+    margin-top: -4rem;
+    background-color: #F6F6F6;
+    border-radius: 4rem 4rem 0 0;
+}
+
+
+.titre, h1 {
+    font-family: "Shrikhand";
+    font-style: italic;
+    font-size: 2.08rem;
+    // font-size: 30px;
+   
+    line-height: 40.82px;
+   
+
+    text-align: left;
+    display: flex;
+
+    padding-left: 20px;
+
+    color: #101010;
+    font-weight: bolder;
+    padding-top: 7px;
+
+}
+
+.titre,
+img h1 {
+    flex-direction: column;
+
+}
+
+.heart,
+.heart-violet {
+    width: 22px;
+    height: 21px;
+    top: 15px;
+    left: 312px;
+
+}
+
+.titre {
+    position: relative;
+}
+
+.heart,
+.heart-violet {
+    position: absolute;
+    right: 0;
+    margin-top: 35px;
+    margin-left: 25px;
+}
+
+.heart-violet {
+    opacity: 0;
+    transition-duration: 1s;
+}
+
+.heart-violet:active,
+.heart-violet:hover,
+.heart-violet .selected {
+
+    opacity: 1;
+}
+
+
+
+// h1
+
+// h2
+
+h2 {
+    font-family: 'roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    // padding-left: 15px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    border-bottom: 3px solid #99E2D0;
+    width: 40px;
+
+
+}
+
+// h2 {
+//     position: relative;
+// }
+
+// h2:after {
+
+//     content: "";
+
+//     position: absolute;
+//     width: 40px;
+//     height: 1px;
+
+//     left: 15px;
+//     border-bottom: 3px solid #99E2D0;
+//     bottom: 4px;
+
+// }
+
+// DIV-LES-PLATS
+
+// .les-plats {
+
+//     display: flex;
+//     flex-direction: column;
+//     padding-top: 15px;
+//     padding-bottom: 15px;
+// }
+.menu-section {
+    background-color: #FF79DA;
+    display: flex;
+    flex-direction: column;
+gap: 12px;
+}
+.button-un {
+    display: flex;
+
+    // justify-content: space-between;
+    background-color: white;
+    // width: 100%;
+    // height: 69px;
+    border-radius: 15.04px;
+    padding: 15px;
+    padding-right: 0;
+  
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+    overflow: hidden;
+   
+
+}
+
+
+// .button,
+// a,
+// .ligne {
+//     margin: 2px;
+// }
+button {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #99E2D0;
+}
+
+
+.button a {
+    font-family: 'roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.09px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+    font-weight: bolder;
+
+}
+
+.button,
+a {
+   
+   
+    text-decoration: none;
+}
+
+
+
+.button .description {
+    font-family: 'roboto', sans-serif;
+    font-size: 15.04px;
+display: block;
+    line-height: 17.63px;
+    background-color: yellow;
+  
+
+    color: #000000;
+    font-weight: lighter;
+
+}
+
+.ligne-right {
+
+    display: flex;
+    justify-content: end;
+    align-items: end;
+
+    font-family: 'roboto', sans-serif;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+   
+     
+    color: #353535;
+    margin-left: auto;
+    background-color: red;
+    padding-right: 15px;
+    
+
+}
+
+.chek {
+    margin-right: -3.8rem;
+   
+
+    width: 59px;
+    
+    background-color: #99E2D0;
+    border-radius: 0 1rem 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+
+}
+
+
+.button-un:hover .chek {
+    margin-right: 0;
+}
+
+.ligne-right {
+    align-items: flex-end;
+}
+
+
+
+// section button-violet
+
+.button-violet {
+    width: 186px;
+    height: 50px;
+    left: 82px;
+    top: 50px;
+    background: linear-gradient(to bottom, var(--pink), var(--purple));
+    border-radius: 25px;
+    box-sizing: border-box;
+    font-family: "roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 20px;
+    border: none;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+
+}
+
+.direction {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+}
+
+
+// footer
+
+footer {
+    display: flex;
+    background-color: #353535;
+    flex-direction: column;
+}
+
+.footer-image-Proposer-un-restaurant h3,
+.footer-partenaire h3 {
+    color: white;
+    width: 400;
+    font-size: 16px;
+    line-height: 18.75px;
+    gap: 7px;
+    font-weight: 500px;
+}
+
+.footer-image-Proposer-un-restaurant,
+h3 img {
+    display: flex;
+    align-items: center;
+}
+
+.footer-partenaire,
+h3 img {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.footer-image-Proposer-un-restaurant img,
+h3 {
+    display: flex;
+}
+
+.footer-image-Proposer-un-restaurant,
+img h3 {
+    margin-bottom: -5px;
+}
+
+.footer-image-Proposer-un-restaurant,
+.footer-partenaire,
+h3 {
+    font-family: "roboto", sans-serif;
+    font-style: normal;
+    size: 16px;
+    line-height: 18.75px;
+    gap: 7px;
+}
+
+.footer-partenaire h3,
+.footer-image-Proposer-un-restaurant,
+h3 {
+
+    margin-left: 0;
+    padding: 1px;
+}
+
+.footer-image-Proposer-un-restaurant img,
+.footer-partenaire img {
+    margin-bottom: 2px;
+}
+
+.footer-image h3 {
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    padding: 4px;
+
+}
+
+.padding,
+img {
+    margin-bottom: 8px;
+}
+
+.mise-en-page {
+    padding: 30px;
+    padding-bottom: 5px;
+}
+
+.logo-footer-white {
+    width: 139px;
+    height: 27px;
+    color: white;
+}
