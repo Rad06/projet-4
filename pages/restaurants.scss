@@ -9,27 +9,14 @@
 
 /* Container */
 
-.container {
 
-    //     width: Hug (375px);
-    // height: Hug (1,275px) ;
-    // top: 315px;
-    // gap: 40px;
-
-}
 
 /* Body */
 
 body {
 
-    
-    // margin: 0 auto;
-    // display: flex;
-    // justify-content: center;
     background-color: #F6F6F6;
-
-
-
+    margin: 0;
 
 
 }
@@ -72,20 +59,12 @@ body {
     left: 25px
 }
 
-.header-white,
-.idd,
-img {}
-
-//    main
-
-
-
 
 // img
 
 .restaurant-le-jay {
-    width: 375px;
-    height: 275px;
+    // width: 375px;
+    // height: 383px;
     top: 63px;
     object-fit: cover;
     width: 100%;
@@ -94,30 +73,25 @@ img {}
 
 }
 
-
 // section .titre
 
 .titre {
-    margin-top: -4rem;
+    margin-top: -3rem;
     background-color: #F6F6F6;
-    border-radius: 4rem 4rem 0 0;
+    border-radius: 40px 40px 0 0;
+
 }
 
 
-.titre, h1 {
+.titre,
+h1 {
     font-family: "Shrikhand";
     font-style: italic;
     font-size: 2.08rem;
-    // font-size: 30px;
-   
     line-height: 40.82px;
-   
-
     text-align: left;
     display: flex;
-
     padding-left: 20px;
-
     color: #101010;
     font-weight: bolder;
     padding-top: 7px;
@@ -141,14 +115,16 @@ img h1 {
 
 .titre {
     position: relative;
+    right: 0;
 }
 
 .heart,
 .heart-violet {
     position: absolute;
-    right: 0;
+    // right: 0;
     margin-top: 35px;
     margin-left: 25px;
+
 }
 
 .heart-violet {
@@ -176,76 +152,32 @@ h2 {
     line-height: 19px;
     letter-spacing: 0em;
     text-align: left;
-    // padding-left: 15px;
     padding-bottom: 10px;
     margin-bottom: 0;
     border-bottom: 3px solid #99E2D0;
     width: 40px;
 
-
 }
 
-// h2 {
-//     position: relative;
-// }
+.menu-section,
+h2 .button-un {
+    padding: 15px;
+}
 
-// h2:after {
-
-//     content: "";
-
-//     position: absolute;
-//     width: 40px;
-//     height: 1px;
-
-//     left: 15px;
-//     border-bottom: 3px solid #99E2D0;
-//     bottom: 4px;
-
-// }
-
-// DIV-LES-PLATS
-
-// .les-plats {
-
-//     display: flex;
-//     flex-direction: column;
-//     padding-top: 15px;
-//     padding-bottom: 15px;
-// }
 .menu-section {
-    background-color: #FF79DA;
     display: flex;
     flex-direction: column;
-gap: 12px;
+    gap: 12px;
 }
+
 .button-un {
     display: flex;
-
-    // justify-content: space-between;
     background-color: white;
-    // width: 100%;
-    // height: 69px;
     border-radius: 15.04px;
-    padding: 15px;
-    padding-right: 0;
-  
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
     overflow: hidden;
-   
-
-}
-
-
-// .button,
-// a,
-// .ligne {
-//     margin: 2px;
-// }
-button {
-    display: flex;
-    flex-direction: column;
+    padding: 15px;
     gap: 5px;
-    background-color: #99E2D0;
 }
 
 
@@ -258,68 +190,46 @@ button {
     text-align: left;
     color: #000000;
     font-weight: bolder;
-
 }
 
 .button,
 a {
-   
-   
     text-decoration: none;
 }
-
-
 
 .button .description {
     font-family: 'roboto', sans-serif;
     font-size: 15.04px;
-display: block;
+    display: block;
     line-height: 17.63px;
-    background-color: yellow;
-  
-
     color: #000000;
     font-weight: lighter;
-
 }
 
 .ligne-right {
-
     display: flex;
     justify-content: end;
     align-items: end;
-
     font-family: 'roboto', sans-serif;
     font-weight: 700;
     line-height: 18px;
     letter-spacing: 0em;
     text-align: center;
-   
-     
     color: #353535;
     margin-left: auto;
-    background-color: red;
-    padding-right: 15px;
-    
-
+    margin-right: 10px;
 }
 
 .chek {
-    margin-right: -3.8rem;
-   
-
+    margin-right: -5rem;
     width: 59px;
-    
     background-color: #99E2D0;
     border-radius: 0 1rem 1rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-
-
 }
-
 
 .button-un:hover .chek {
     margin-right: 0;
@@ -334,27 +244,32 @@ display: block;
 // section button-violet
 
 .button-violet {
-    width: 186px;
+    width: 218px;
     height: 50px;
     left: 82px;
     top: 50px;
     background: linear-gradient(to bottom, var(--pink), var(--purple));
+    justify-content: center;
+    align-items: center;
+    display: flex;
     border-radius: 25px;
     box-sizing: border-box;
-    font-family: "roboto";
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 18.75px;
     color: white;
-    text-align: center;
-    display: flex;
     align-items: center;
-    justify-content: center;
     text-decoration: none;
     margin-top: 20px;
     border: none;
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: (0 4px 10px 0 rgba(0, 0, 0, 0.25));
+
+}
+
+.button-violet:hover,
+.button-violet:focus {
+    box-shadow: (0 4px 15px 0 rgba(0, 0, 0, 0.35));
 
 }
 
@@ -375,6 +290,7 @@ footer {
     display: flex;
     background-color: #353535;
     flex-direction: column;
+    align-items: end;
 }
 
 .footer-image-Proposer-un-restaurant h3,
@@ -453,6 +369,7 @@ img {
 .mise-en-page {
     padding: 30px;
     padding-bottom: 5px;
+
 }
 
 .logo-footer-white {
