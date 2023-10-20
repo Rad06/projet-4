@@ -7,21 +7,15 @@
     --purple: #9356DC;
 }
 
-/* Container */
-
-
-
 /* Body */
 
 body {
-
     background-color: #F6F6F6;
     margin: 0;
-
-
 }
 
 /* header */
+
 .header-white {
     display: flex;
     align-items: center;
@@ -29,8 +23,6 @@ body {
     background-color: white;
     position: relative;
 }
-
-
 .header-white img {
     width: 197px;
     height: 36px;
@@ -38,17 +30,12 @@ body {
     left: 89px;
     padding: 0px, 19px, 0px, 16px;
     gap: 10px;
-
     display: flex;
     flex-direction: column;
-
     justify-content: center;
     height: 36px;
     padding-top: 15px;
     padding-bottom: 10px;
-
-
-
 }
 
 .header-white .idd {
@@ -59,18 +46,15 @@ body {
     left: 25px
 }
 
-
 // img
 
 .restaurant-le-jay {
-    // width: 375px;
-    // height: 383px;
     top: 63px;
+
     object-fit: cover;
     width: 100%;
     display: block;
     box-sizing: border-box;
-
 }
 
 // section .titre
@@ -79,13 +63,11 @@ body {
     margin-top: -3rem;
     background-color: #F6F6F6;
     border-radius: 40px 40px 0 0;
-
 }
-
 
 .titre,
 h1 {
-    font-family: "Shrikhand";
+    font-family: "Shrikhand", sans-serif;
     font-style: italic;
     font-size: 2.08rem;
     line-height: 40.82px;
@@ -95,13 +77,11 @@ h1 {
     color: #101010;
     font-weight: bolder;
     padding-top: 7px;
-
 }
 
 .titre,
 img h1 {
     flex-direction: column;
-
 }
 
 .heart,
@@ -110,7 +90,6 @@ img h1 {
     height: 21px;
     top: 15px;
     left: 312px;
-
 }
 
 .titre {
@@ -121,10 +100,8 @@ img h1 {
 .heart,
 .heart-violet {
     position: absolute;
-    // right: 0;
     margin-top: 35px;
     margin-left: 25px;
-
 }
 
 .heart-violet {
@@ -135,13 +112,9 @@ img h1 {
 .heart-violet:active,
 .heart-violet:hover,
 .heart-violet .selected {
-
     opacity: 1;
 }
 
-
-
-// h1
 
 // h2
 
@@ -156,8 +129,9 @@ h2 {
     margin-bottom: 0;
     border-bottom: 3px solid #99E2D0;
     width: 40px;
-
 }
+
+//  Menu-section:  / button-un / button /description/ligne-right/chek
 
 .menu-section,
 h2 .button-un {
@@ -179,7 +153,6 @@ h2 .button-un {
     padding: 15px;
     gap: 5px;
 }
-
 
 .button a {
     font-family: 'roboto', sans-serif;
@@ -239,9 +212,15 @@ a {
     align-items: flex-end;
 }
 
+// section direction / button-violet
 
-
-// section button-violet
+.direction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 45px;
+}
 
 .button-violet {
     width: 218px;
@@ -264,24 +243,14 @@ a {
     margin-top: 20px;
     border: none;
     box-shadow: (0 4px 10px 0 rgba(0, 0, 0, 0.25));
-
 }
 
 .button-violet:hover,
 .button-violet:focus {
     box-shadow: (0 4px 15px 0 rgba(0, 0, 0, 0.35));
-
 }
 
-.direction {
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
-
-}
 
 
 // footer
@@ -339,7 +308,6 @@ h3 {
 .footer-partenaire h3,
 .footer-image-Proposer-un-restaurant,
 h3 {
-
     margin-left: 0;
     padding: 1px;
 }
@@ -350,7 +318,6 @@ h3 {
 }
 
 .footer-image h3 {
-
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
@@ -358,7 +325,6 @@ h3 {
     text-align: left;
     color: white;
     padding: 4px;
-
 }
 
 .padding,
@@ -369,7 +335,6 @@ img {
 .mise-en-page {
     padding: 30px;
     padding-bottom: 5px;
-
 }
 
 .logo-footer-white {

@@ -1,0 +1,144 @@
+@media screen and (max-width: 375px) {
+/*GENERAL*/
+:root {
+	--main-color: white;
+	--second-color: #EAEAEA;
+	--drak-grey-color: #353535;
+	--première-color-button: #9356DC, #FF79DA
+}
+
+.headerTextContent {
+	background-color: #EAEAEA;
+}
+
+.header-white {
+	width: 375px;
+	height: 63px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+}
+
+body {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	background-color: black;
+
+	
+
+}
+
+.container {
+	min-width: 992px;
+	max-width: 1440px;
+}
+
+h2,
+h3 {
+	font-family: 'roboto', sans-serif;
+	font-style: normal;
+}
+
+header .headerTextContent {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	font-family: 'roboto', sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28.13px;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center
+
+}
+
+p {
+	font-family: 'roboto', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 21.09px;
+	display: flex;
+	justify-content: center;
+	align-items: center var(--drak-grey-color) #353535
+}
+
+.button-violet {
+
+	width: 218px;
+	height: 50px;
+	left: 82px;
+
+	background-color: violet;
+
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 25px;
+
+	box-sizing: border-box;
+
+	font-family: 'roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18.75px;
+	color: white;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	text-decoration: none;
+}
+
+.button-logo-mobile,
+.button-menu,
+.button-restaurant {
+	color: black;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18.75px;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 20px;
+	width: 322.49px;
+	height: 72.38px;
+	text-align: center;
+	background-color: #F6F6F6;
+
+}
+
+.button-white {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+
+
+
+}
+
+
+
+
+
+
+
+footer{
+	background-color: red;
+}
+
+
+
+
+
+}

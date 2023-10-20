@@ -3,4 +3,21 @@
   .mise-en-page {
     display: block;
   }
+  .titre,
+  h1 {
+    padding-left: 0.5rem;
+    font-family: "Shrikhand", serif;
+    font-size: italic;
+    font-style: unset;
+  }
+  .heart,
+  .heart-violet {
+    position: absolute;
+  }
+  .heart,
+  .heart-violet {
+    width: 22px;
+    height: 21px;
+    top: 15px;
+  }
 }/*# sourceMappingURL=mobile.css.map */

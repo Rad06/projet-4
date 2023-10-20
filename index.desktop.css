@@ -3,7 +3,7 @@
     /* Header */
 
     /* Body */
-
+  
 
     /* Main */
 
@@ -23,15 +23,32 @@
         flex-direction: row;
         gap: 40px;
     }
+    .sectionwhitebackground h2 {
 
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: left;
+        /* padding-left: 12.5rem;
+        padding-bottom: 18px; */
+        
+    
+    }
 
 
 
 
     /* Section : restaurants section-background-color */
 
+    .container {
+        max-width: 1080px;
+        background-color: red;
+        margin: 0 auto;
+    }
+
     .restaurants {
-        padding: 0px, 180px, 0px, 180px;
+        padding: 0px 180px 0px 180px;
         gap: 20px;
     }
 
@@ -123,8 +140,10 @@
         padding-left: 50px;
     } */
 
-
-
-
-
 }
+
+
+
+    
+    
+    

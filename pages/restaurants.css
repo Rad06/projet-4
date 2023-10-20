@@ -7,7 +7,6 @@
   --purple: #9356DC;
 }
 
-/* Container */
 /* Body */
 body {
   background-color: #F6F6F6;
@@ -63,7 +62,7 @@ body {
 
 .titre,
 h1 {
-  font-family: "Shrikhand";
+  font-family: "Shrikhand", sans-serif;
   font-style: italic;
   font-size: 2.08rem;
   line-height: 40.82px;
@@ -203,6 +202,14 @@ a {
   align-items: flex-end;
 }
 
+.direction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 45px;
+}
+
 .button-violet {
   width: 218px;
   height: 50px;
@@ -229,14 +236,6 @@ a {
 .button-violet:hover,
 .button-violet:focus {
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.35);
-}
-
-.direction {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 
 footer {
