@@ -232,20 +232,10 @@ p {
   opacity: 1;
 }
 
-.page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
 footer {
   background-color: #353535;
 }
 
-/* header */
 @media screen and (min-width: 1200px) {
   body {
     background-color: aquamarine;
