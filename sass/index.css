@@ -1,9 +1,266 @@
-body {
-  background-color: yellow;
+/*GENERAL*/
+:root {
+  --main-color: white;
+  --second-color: #EAEAEA;
+  --drak-grey-color: #353535;
+  --pink: #FF79DA;
+  --purple: #9356DC;
 }
 
+body {
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  margin: auto;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+.header-white {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.header-white .logo-ohmyfood {
+  height: 36px;
+}
+
+.headerTextContent {
+  background-color: #EAEAEA;
+  box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.15) inset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerTextContent img {
+  display: block;
+}
+
+.headerTextContent span {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-weight: 570;
+  color: #353535;
+}
+
+.headerTextConten,
+.pin,
+span {
+  display: flex;
+  padding: 7px;
+}
+
+.section-button {
+  text-align: center;
+  padding: 30px;
+  background-color: #F6F6F6;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28.13px;
+  color: #000000;
+  margin: 0;
+}
+
+p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21.09px;
+  align-items: center var(--drak-grey-color) #353535;
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+
+.button-violet {
+  display: inline-block;
+  width: 218px;
+  height: 50px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, var(--pink), var(--purple));
+  border-radius: 25px;
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.75px;
+  color: white;
+  text-decoration: none;
+  border: none;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.button-violet:hover,
+.button-violet:focus {
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.35);
+}
+
+h2 {
+  padding-left: 15px;
+}
+
+.button-logo-mobile,
+.button-menu,
+.button-restaurant {
+  border-style: solid;
+  border-color: #F6F6F6;
+  border-width: 2px;
+  border-radius: 20px;
+  width: 322.49px;
+  height: 72.38px;
+  text-align: center;
+  background-color: #F6F6F6;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+}
+
+.insertion {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.numero {
+  position: absolute;
+  top: calc(50% - 12px);
+  left: -12px;
+  background-color: #9356DC;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.texte-noir {
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500px;
+  line-height: 18.75px;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.restaurants {
+  background-color: #F6F6F6;
+}
+
+.directionColumn {
+  position: relative;
+  text-decoration: none;
+}
+
+.nouveau {
+  right: 0;
+  position: absolute;
+  padding: 20px;
+}
+
+.image-directionColumn {
+  width: 498.65px;
+  height: 231px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.display-flex-white {
+  background-color: white;
+  border-radius: 0px 0px 15px 15px;
+  position: relative;
+}
+
+.display-flex-white,
+.typography,
+p {
+  margin: -5px;
+  color: #000000;
+  padding-left: 15px;
+}
+
+.typography {
+  padding-top: 15px;
+}
+
+.paragraphe {
+  font-size: 17px;
+  padding-bottom: 15px;
+  padding-top: 8px;
+}
+
+.heart,
+.heart-violet {
+  top: 15px;
+  left: 425px;
+}
+
+.heart,
+.heart-violet {
+  position: absolute;
+  right: 0;
+  padding-bottom: 55px;
+}
+
+.heart-violet {
+  opacity: 0;
+  transition-duration: 1s;
+}
+
+.heart-violet:active,
+.heart-violet:hover,
+.heart-violet .selected {
+  opacity: 1;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  background-color: #353535;
+}
+
+/* header */
 @media screen and (min-width: 1200px) {
   body {
     background-color: aquamarine;
+  }
+  .sectionwhitebackground,
+  .button-white {
+    flex-direction: row;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px 100px;
+  }
+  .container {
+    max-width: 1080px;
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=index.css.map */
