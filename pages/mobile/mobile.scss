@@ -1,10 +1,5 @@
 @media screen and (max-width: 375px) {
 
-  footer,
-  .mise-en-page {
-    display: block;
-  }
-
 
   .titre,
   h1 {
@@ -31,6 +26,14 @@
     top: 15px;
   }
 
+.description , a {
+  white-space: nowrap;
+ 
+}
 
+  footer,
+  .mise-en-page {
+    display: block;
+  }
 
 }
