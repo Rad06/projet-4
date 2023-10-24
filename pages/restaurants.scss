@@ -69,11 +69,11 @@ body {
 h1 {
     font-family: "Shrikhand", sans-serif;
     font-style: italic;
-    font-size: 2.08rem;
+    font-size: 1.8rem;
     line-height: 40.82px;
     text-align: left;
     display: flex;
-    padding-left: 20px;
+    padding-left: 8px;
     color: #101010;
     font-weight: bolder;
     padding-top: 7px;
@@ -263,7 +263,7 @@ footer {
     display: flex;
     background-color: #353535;
     flex-direction: column;
-    align-items: end;
+    align-items: start;
 }
 
 .footer-image-Proposer-un-restaurant h3,
@@ -345,4 +345,105 @@ img {
     width: 139px;
     height: 27px;
     color: white;
+}
+
+
+
+// DESKTOP
+
+@media screen and (min-width: 1200px) {
+   
+    /* BODY  */
+
+    body {
+        background-color: white;
+      
+    }
+    /* IMG restaurant-le-jay */
+
+    .restaurant-le-jay {
+        width: 100%;
+        height: 33rem;
+        object-fit: cover;
+    }
+    
+/* PAGE/COULEUR */
+
+    .couleur {
+        background-color: #F6F6F6;
+        display: block;
+    }
+    .page {
+        max-width: 1000px;
+        margin: auto;
+    }
+    /* section titre */
+    .titre,
+    h1 {
+        justify-content: center;
+        font-family: "Shrikhand", serif;
+        font-size: italic;
+        font-style: unset;
+    }
+    .heart,
+    .heart-violet {
+        padding-left: 20rem;
+        padding-top: 0.2rem;
+    }
+    /* menu-section */
+    .menu-section {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding-left: 11rem;
+        padding-right: 11rem;
+    }
+
+    .chek {
+        align-items: center;
+    }
+    
+    /* Footer */
+
+    .mise-en-page,
+    .padding,
+    .footer-image-Proposer-un-restaurant,
+    .footer-partenaire,
+    .footer-image-marge {
+        align-items: center;
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    .footer-image-Proposer-un-restaurant .footer-partenaire,
+    .footer-image {
+        padding-left: 30px;
+    }
+
+    .marge-deux {
+        padding-left: 10px;
+    }
+
+    .alignement,
+    h3 {
+        display: flex;
+        padding: 0;
+    }
+
+    .padding {
+        order: 10;
+
+        margin-top: 0.5rem;
+        padding-top: 1rem;
+        padding-left: 10rem;
+        padding-right: 1rem;
+    }
+
+    .padding img {
+        padding-right: 2rem;
+    }
+
+
 }
