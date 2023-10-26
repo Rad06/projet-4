@@ -143,7 +143,9 @@ h2 .button-un {
   gap: 5px;
 }
 
-.button, .ligne-right, .chek {
+.button,
+.ligne-right,
+.chek {
   padding: 15px;
 }
 
@@ -183,10 +185,10 @@ a {
   text-align: center;
   color: #353535;
   margin-left: auto;
-  margin-right: 10px;
+  padding-right: 55px;
 }
 
-.chek {
+.validation {
   margin-right: -6rem;
   width: 59px;
   background-color: #99E2D0;
@@ -194,17 +196,76 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  text-align: center;
 }
 
-.button-un:hover .chek {
+.button-un:hover .validation {
   margin-right: 0;
 }
 
-.ligne-right {
-  align-items: flex-end;
+.cercle-blanc {
+  background-color: white;
+  border-radius: 50px;
+  width: 25px;
+  height: 25px;
 }
 
+.valide {
+  color: #99E2D0;
+  justify-content: center;
+}
+
+.button-un {
+  transition: transform 5s;
+}
+
+.button-un:hover .cercle-blanc {
+  transform: rotate(360deg);
+  transition-duration: 0.5s;
+}
+
+.animation-delay-quatre {
+  animation: progress-affichage 2s;
+}
+
+@keyframes progress-affichage {
+  0% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+.animation-delay-deux {
+  animation: progress-affichage 4s;
+}
+
+@keyframes progress-affichage {
+  0% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+.animation-delay-trois {
+  animation: progress-affichage 6s;
+}
+
+@keyframes progress-affichage {
+  0% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
 .direction {
   display: flex;
   justify-content: center;
@@ -234,10 +295,12 @@ a {
   margin-top: 20px;
   border: none;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+  transition: transform 400ms;
 }
 
 .button-violet:hover,
 .button-violet:focus {
+  transform: scale(0.99);
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.35);
 }
 
@@ -375,37 +438,30 @@ img {
     align-items: center;
   }
   /* Footer */
-  .mise-en-page,
-  .padding,
-  .footer-image-Proposer-un-restaurant,
-  .footer-partenaire,
-  .footer-image-marge {
+  footer {
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    display: flex;
-    padding: 10px;
-    justify-content: center;
-    padding-left: 0;
+    justify-content: end;
+    padding-right: 5rem;
   }
-  .footer-image-Proposer-un-restaurant .footer-partenaire,
-  .footer-image {
-    padding-left: 30px;
-  }
-  .marge-deux {
-    padding-left: 10px;
-  }
-  .alignement,
-  h3 {
-    display: flex;
-    padding: 0;
+  .mise-en-page {
+    display: inline-flex;
+    gap: 15px;
   }
   .padding {
     order: 10;
-    margin-top: 0.5rem;
-    padding-top: 1rem;
-    padding-left: 10rem;
-    padding-right: 1rem;
+    padding-left: 5rem;
+    padding-bottom: 7px;
+    padding-top: 15px;
   }
-  .padding img {
-    padding-right: 2rem;
+  .footer-image-Proposer-un-restaurant {
+    padding-bottom: 15px;
+  }
+  .footer-partenaire {
+    padding-bottom: 10px;
+  }
+  .footer-image {
+    padding-bottom: 12px;
   }
 }/*# sourceMappingURL=restaurants.css.map */
