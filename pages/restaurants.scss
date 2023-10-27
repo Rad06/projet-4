@@ -91,6 +91,7 @@ img h1 {
     height: 21px;
     top: 15px;
     left: 312px;
+    cursor: pointer;
 }
 
 .titre {
@@ -152,6 +153,12 @@ h2 .button-un {
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
     overflow: hidden;
     gap: 5px;
+    cursor: pointer;
+}
+ .button , .description{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .button,
@@ -207,6 +214,7 @@ a {
     align-items: center;
     justify-content: center;
     text-align: center;
+transition: margin-right 1s ;
 }
 
 .button-un:hover .validation {
@@ -230,16 +238,21 @@ a {
     transition: transform 5s;
 }
 
-.button-un:hover .cercle-blanc {
-    transform: rotate(360deg);
-    transition-duration: .5s;
+ .cercle-blanc {
+    transform: rotate(0deg);
+    animation: spin 1s;
 }
 
-
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {transform: rotate(360deg);}
+}
 // ANIMATION AFFICHAGE PROGRESSIVE
 
 .animation-delay-quatre {
-    animation: progress-affichage 2s;
+    animation: progress-affichage 0.5s;
 }
 @keyframes progress-affichage{
     0% {
@@ -253,7 +266,9 @@ a {
 }
 
 .animation-delay-deux {
-    animation: progress-affichage 4s;
+    animation: progress-affichage 0.5s 1s forwards; 
+    transform: scaleX(0);
+    opacity: 0;
 }
 @keyframes progress-affichage{
     0% {
@@ -262,12 +277,15 @@ a {
     }
     100% {
         transform: scaleX(1);
-        opacity: 1;
+        opacity: 1; 
+
     }
 }
 
 .animation-delay-trois {
-    animation: progress-affichage 6s;
+    animation: progress-affichage 0.5s 2s forwards;
+    transform: scaleX(0);
+    opacity: 0;
 }
 @keyframes progress-affichage{
     0% {
@@ -311,6 +329,7 @@ a {
     margin-top: 20px;
     border: none;
     box-shadow: (0 4px 10px 0 rgba(0, 0, 0, 0.25));
+    cursor: pointer;
     transition: transform 400ms;
 }
 
@@ -338,12 +357,14 @@ footer {
     line-height: 18.75px;
     gap: 7px;
     font-weight: 500px;
+    cursor: pointer;
 }
 
 .footer-image-Proposer-un-restaurant,
 h3 img {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .footer-partenaire,
@@ -351,6 +372,7 @@ h3 img {
     display: flex;
     align-items: center;
     color: white;
+
 }
 
 .footer-image-Proposer-un-restaurant img,
@@ -393,6 +415,7 @@ h3 {
     text-align: left;
     color: white;
     padding: 4px;
+    cursor: pointer;
 }
 
 .padding,

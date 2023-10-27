@@ -13,6 +13,11 @@ body {
   margin: 0;
 }
 
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
 .header-white {
   display: flex;
   justify-content: center;
@@ -64,6 +69,9 @@ a {
   text-align: center;
   padding: 30px;
   background-color: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
@@ -83,7 +91,7 @@ h1 {
 }
 
 .button-violet {
-  display: inline-block;
+  display: flex;
   width: 218px;
   height: 50px;
   align-items: center;
@@ -100,11 +108,15 @@ h1 {
   text-decoration: none;
   border: none;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: all 400ms;
 }
 
 .button-violet:hover,
 .button-violet:focus {
+  transform: scale(0.99);
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.35);
+  background: linear-gradient(to bottom, #ff93e1, #a16be0);
 }
 
 .button-white {
@@ -115,9 +127,8 @@ h1 {
 }
 
 h2 {
-  padding-top: 25px;
-  padding-bottom: 20px;
-  padding-left: 15px;
+  margin: 0;
+  padding: 0;
 }
 
 .button-logo-mobile,
@@ -127,8 +138,6 @@ h2 {
   border-color: #F6F6F6;
   border-width: 2px;
   border-radius: 20px;
-  width: 322.49px;
-  height: 72.38px;
   text-align: center;
   background-color: #F6F6F6;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
@@ -136,6 +145,15 @@ h2 {
   align-items: center;
   justify-content: center;
   font-weight: bolder;
+  width: 100%;
+}
+
+.section-padding {
+  padding: 50px 20px;
+}
+
+h2 {
+  padding-bottom: 30px;
 }
 
 .insertion {
@@ -184,14 +202,7 @@ h2 {
   align-items: center;
   justify-content: center;
   flex: 1;
-  margin-top: 60px;
   padding-bottom: 2rem;
-}
-
-.titre-restaurants {
-  align-self: start;
-  padding-bottom: 0;
-  padding-left: 20px;
 }
 
 .mise-en-page-un {
@@ -347,18 +358,12 @@ footer {
   br {
     display: none;
   }
-  h2 {
-    padding-left: 13rem;
-  }
   .sectionwhitebackground,
   .button-white {
     flex-direction: row;
   }
   .button-white {
     justify-content: center;
-  }
-  .titre-restaurants {
-    padding-left: 10.9rem;
   }
   .grid {
     display: grid;
