@@ -5,6 +5,7 @@
   --drak-grey-color: #353535;
   --pink: #FF79DA;
   --purple: #9356DC;
+  --font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -46,10 +47,10 @@ body {
 
 span {
   font-size: 16px;
+  font-weight: 500;
   line-height: 19px;
   letter-spacing: 0em;
   text-align: left;
-  font-weight: 570;
   color: #353535;
   text-decoration: none;
 }
@@ -83,11 +84,15 @@ h1 {
 }
 
 .decouvrer {
-  font-weight: 100;
-  line-height: 21.09px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #353535;
   padding-top: 15px;
   padding-bottom: 25px;
-  color: #353535;
 }
 
 .button-violet {
@@ -100,10 +105,11 @@ h1 {
   background: linear-gradient(to bottom, var(--pink), var(--purple));
   border-radius: 25px;
   box-sizing: border-box;
-  font-style: normal;
-  font-weight: 500;
   font-size: 16px;
-  line-height: 18.75px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
   color: white;
   text-decoration: none;
   border: none;
@@ -177,10 +183,11 @@ h2 {
 }
 
 .texte-noir {
+  font-family: "Roboto", sans-serif;
   color: #000000;
   text-decoration: none;
   font-size: 16px;
-  font-weight: 500px;
+  font-weight: 500;
   line-height: 18.75px;
   white-space: nowrap;
   text-align: left;
@@ -248,14 +255,23 @@ p {
 }
 
 .typography {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
   padding-top: 15px;
 }
 
 .paragraphe {
   font-size: 17px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
   padding-bottom: 15px;
   padding-top: 8px;
-  font-weight: 300;
 }
 
 .heart,
@@ -293,12 +309,12 @@ footer {
 
 .footer-image-Proposer-un-restaurant h3,
 .footer-partenaire h3 {
-  color: white;
-  width: 400;
   font-size: 16px;
-  line-height: 18.75px;
-  gap: 7px;
-  font-weight: 500px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
   margin: 0;
 }
 
@@ -333,14 +349,14 @@ footer {
 }
 
 .footer-image p {
+  color: white;
+  padding: 4px;
+  padding-left: 20px;
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
   letter-spacing: 0em;
   text-align: left;
-  color: white;
-  padding: 4px;
-  padding-left: 20px;
 }
 
 @media screen and (min-width: 1200px) {
