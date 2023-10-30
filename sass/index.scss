@@ -319,75 +319,102 @@ p {
 // FOOTER
 
 footer {
+    display: flex;
     background-color: #353535;
-    padding-top: 15px;
-    padding-bottom: 25px;
-
-}
-
-.padding {
-    padding-top: 15px;
-    padding-left: 20px;
+    flex-direction: column;
+    align-items: start;
+    padding-bottom: 15px;
 }
 
 .footer-image-Proposer-un-restaurant h3,
 .footer-partenaire h3 {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left;
-    // gap: 77px;
     color: white;
-    margin: 0;
+    width: 400;
+    font-size: 16px;
+    line-height: 18.75px;
+    gap: 7px;
+    font-weight: 500px;
+    cursor: pointer;
 }
 
-.footer-image-Proposer-un-restaurant {
+.footer-image-Proposer-un-restaurant,
+h3 img {
     display: flex;
     align-items: center;
-    padding-top: 15px;
-    padding-bottom: 10px;
-    padding-left: 7px;
-}
-
-.footer-partenaire {
-    padding-left: 7px;
-}
-
-.footer-image {
-    padding-left: 8px;
+    cursor: pointer;
 }
 
 .footer-partenaire,
-.alignement h3 {
+h3 img {
     display: flex;
     align-items: center;
-    padding-bottom: 10px;
-
-}
-
-.logo-proposer,
-.alignement {
-    height: 13px;
-    padding-right: 10px;
-    padding-left: 15px;
-}
-
-.footer-image p {
     color: white;
-    padding: 4px;
-    padding-left: 20px;
+
+}
+
+.footer-image-Proposer-un-restaurant img,
+h3 {
+    display: flex;
+}
+
+.footer-image-Proposer-un-restaurant,
+img h3 {
+    margin-bottom: -5px;
+}
+
+.footer-image-Proposer-un-restaurant,
+.footer-partenaire,
+h3 {
+    font-family: "roboto", sans-serif;
+    font-weight: 500;
+    size: 16px;
+    line-height: 18.75px;
+    gap: 7px;
+}
+
+.footer-partenaire h3,
+.footer-image-Proposer-un-restaurant,
+h3 {
+   
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+h3 {
+    margin: 0;
+}
+
+.footer-image-Proposer-un-restaurant img,
+.footer-partenaire img {
+    margin-bottom: 2px;
+}
+
+p {
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
     letter-spacing: 0em;
     text-align: left;
+    color: white;
+    padding: 4px;
+    cursor: pointer;
+    margin: 0;
 }
 
+.padding,
+img {
+   padding-bottom: 5px;
+}
 
+.mise-en-page {
+    padding: 30px;
+    padding-bottom: 5px;
+}
 
-
-
+.logo-footer-white {
+    width: 139px;
+    height: 27px;
+    color: white;
+}
 
 
 
@@ -465,22 +492,31 @@ footer {
         flex-direction: row;
         align-items: center;
         justify-content: end;
-        padding-right: 5rem;
+    }
+
+    .mise-en-page {
+        display: flex;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        gap: 20px;
     }
 
     .padding {
         order: 10;
-        padding-left: 5rem;
-        padding-bottom: 7px;
-        padding-top: 10px;
+        padding-top: 7px;
+        padding-left: 80px;
+        padding-right: 30px;
     }
 
     .footer-image-Proposer-un-restaurant {
-        padding-bottom: 15px;
+        padding-bottom: 13px;
     }
 
     .footer-partenaire {
-        padding-top: 10px;
+        padding-bottom: 1px;
+    }
+    .footer-image {
+        padding-top: 7px;
     }
 
 }

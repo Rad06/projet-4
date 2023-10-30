@@ -336,6 +336,7 @@ footer {
   background-color: #353535;
   flex-direction: column;
   align-items: start;
+  padding-bottom: 15px;
 }
 
 .footer-image-Proposer-un-restaurant h3,
@@ -386,8 +387,12 @@ h3 {
 .footer-partenaire h3,
 .footer-image-Proposer-un-restaurant,
 h3 {
-  margin-left: 0;
-  padding: 1px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+h3 {
+  margin: 0;
 }
 
 .footer-image-Proposer-un-restaurant img,
@@ -404,11 +409,12 @@ p {
   color: white;
   padding: 4px;
   cursor: pointer;
+  margin: 0;
 }
 
 .padding,
 img {
-  margin-bottom: 8px;
+  padding-bottom: 5px;
 }
 
 .mise-en-page {
@@ -473,25 +479,26 @@ img {
     flex-direction: row;
     align-items: center;
     justify-content: end;
-    padding-right: 5rem;
   }
   .mise-en-page {
-    display: inline-flex;
-    gap: 15px;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    gap: 20px;
   }
   .padding {
     order: 10;
-    padding-left: 5rem;
-    padding-bottom: 7px;
-    padding-top: 15px;
+    padding-top: 7px;
+    padding-left: 80px;
+    padding-right: 30px;
   }
   .footer-image-Proposer-un-restaurant {
-    padding-bottom: 15px;
+    padding-bottom: 13px;
   }
   .footer-partenaire {
-    padding-bottom: 10px;
+    padding-bottom: 1px;
   }
   .footer-image {
-    padding-bottom: 12px;
+    padding-top: 7px;
   }
 }/*# sourceMappingURL=restaurants.css.map */
