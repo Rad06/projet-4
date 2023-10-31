@@ -1,0 +1,601 @@
+/*GENERAL*/
+:root {
+    --main-color: white;
+    --second-color: #EAEAEA;
+    --drak-grey-color: #353535;
+    --pink: #FF79DA;
+    --purple: #9356DC;
+}
+
+$pink: #FF79DA;
+$purple: #9356DC;
+/* Body */
+
+body {
+    background-color: #F6F6F6;
+    margin: 0;
+    font-family: 'roboto', sans-serif;
+}
+
+/* header */
+
+.header-white {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    position: relative;
+}
+
+.header-white img {
+    width: 197px;
+    height: 36px;
+    top: 14px;
+    left: 89px;
+    padding: 0px, 19px, 0px, 16px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 36px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.header-white .idd {
+    width: 17px;
+    height: 16px;
+    position: absolute;
+    top: 5px;
+    left: 25px
+}
+
+// img
+
+.restaurant-le-jay {
+    top: 63px;
+
+    object-fit: cover;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+
+// section .titre
+
+.titre {
+    margin-top: -3rem;
+    background-color: #F6F6F6;
+    border-radius: 40px 40px 0 0;
+}
+
+.titre,
+h1 {
+    font-family: "Shrikhand";
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 41px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-top: 7px;
+    padding-left: 8px;
+}
+
+.titre,
+img h1 {
+    flex-direction: column;
+}
+
+.heart,
+.heart-violet {
+    width: 22px;
+    height: 21px;
+    top: 15px;
+    left: 312px;
+    cursor: pointer;
+}
+
+.titre {
+    position: relative;
+    right: 0;
+}
+
+.heart,
+.heart-violet {
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 25px;
+}
+
+.heart-violet {
+    opacity: 0;
+    transition-duration: 1s;
+}
+
+.heart-violet:active,
+.heart-violet:hover,
+.heart-violet .selected {
+    opacity: 1;
+}
+
+
+// h2
+
+h2 {
+
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    border-bottom: 3px solid #99E2D0;
+    width: 40px;
+}
+
+//  Menu-section:  / button-un / button /description/ligne-right/chek
+
+.menu-section,
+h2 .button-un {
+    padding: 15px;
+}
+
+.menu-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.button-un {
+    display: flex;
+    background-color: white;
+    border-radius: 15.04px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+    overflow: hidden;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.button,
+.description {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.button,
+.ligne-right,
+.chek {
+    padding: 15px;
+}
+
+.button a {
+    font-family: 'roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.09px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+
+}
+
+.button,
+a {
+    text-decoration: none;
+}
+
+.button .description {
+    font-family: 'roboto', sans-serif;
+    font-size: 15.04px;
+    display: block;
+    line-height: 17.63px;
+    color: #000000;
+    font-weight: lighter;
+}
+
+.ligne-right {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    font-family: 'roboto', sans-serif;
+    font-weight: 700;
+    font-size: 15.04px;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #353535;
+    margin-left: auto;
+    padding-right: 55px;
+}
+
+.validation {
+    margin-right: -6rem;
+    width: 59px;
+    background-color: #99E2D0;
+    border-radius: 0 1rem 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: margin-right 1s;
+}
+
+.button-un:hover .validation {
+    margin-right: 0;
+}
+
+.cercle-blanc {
+    background-color: white;
+    border-radius: 50px;
+    width: 25px;
+    height: 25px;
+}
+
+.valide {
+    color: #99E2D0;
+    justify-content: center;
+}
+
+// ANIMATION ROTATION 
+
+.button-un {
+    transition: transform 5s;
+}
+
+.cercle-blanc {
+    transform: rotate(0deg);
+    animation: spin 1s;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+// ANIMATION AFFICHAGE PROGRESSIVE
+
+.animation-delay-quatre {
+    animation: progress-affichage 0.5s;
+}
+
+@keyframes progress-affichage {
+    0% {
+        transform: scaleX(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
+
+.animation-delay-deux {
+    animation: progress-affichage 0.5s 1s forwards;
+    transform: scaleX(0);
+    opacity: 0;
+}
+
+@keyframes progress-affichage {
+    0% {
+        transform: scaleX(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scaleX(1);
+        opacity: 1;
+
+    }
+}
+
+.animation-delay-trois {
+    animation: progress-affichage 0.5s 2s forwards;
+    transform: scaleX(0);
+    opacity: 0;
+}
+
+@keyframes progress-affichage {
+    0% {
+        transform: scaleX(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
+
+// section direction / button-violet
+
+.direction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 45px;
+}
+
+
+.button-violet {
+    display: flex;
+    width: 218px;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, var(--pink), var(--purple));
+    border-radius: 25px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border: none;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: all 400ms;
+}
+
+.button-violet:hover,
+.button-violet:focus {
+    transform: scale(0.99);
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.35);
+    background: linear-gradient(to bottom, lighten($pink, 5%), lighten($purple, 5%));
+
+}
+
+// footer
+
+footer {
+    display: flex;
+    background-color: #353535;
+    flex-direction: column;
+    align-items: start;
+    padding-bottom: 15px;
+}
+
+.footer-image-Proposer-un-restaurant h3,
+.footer-partenaire h3 {
+    color: white;
+    width: 400;
+    font-size: 16px;
+    line-height: 18.75px;
+    gap: 7px;
+    font-weight: 500px;
+    cursor: pointer;
+}
+
+.footer-image-Proposer-un-restaurant,
+h3 img {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.footer-partenaire,
+h3 img {
+    display: flex;
+    align-items: center;
+    color: white;
+
+}
+
+.footer-image-Proposer-un-restaurant img,
+h3 {
+    display: flex;
+}
+
+.footer-image-Proposer-un-restaurant,
+img h3 {
+    margin-bottom: -5px;
+}
+
+.footer-image-Proposer-un-restaurant,
+.footer-partenaire,
+h3 {
+    font-family: "roboto", sans-serif;
+    font-weight: 500;
+    size: 16px;
+    line-height: 18.75px;
+    gap: 7px;
+}
+
+.footer-partenaire h3,
+.footer-image-Proposer-un-restaurant,
+h3 {
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+h3 {
+    margin: 0;
+}
+
+.footer-image-Proposer-un-restaurant img,
+.footer-partenaire img {
+    margin-bottom: 2px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    padding: 4px;
+    cursor: pointer;
+    margin: 0;
+}
+
+.padding,
+img {
+    padding-bottom: 5px;
+}
+
+.mise-en-page {
+    padding: 30px;
+    padding-bottom: 5px;
+}
+
+.logo-footer-white {
+    width: 139px;
+    height: 27px;
+    color: white;
+}
+
+
+
+// DESKTOP
+
+@media screen and (min-width: 1200px) {
+
+    /* BODY  */
+
+    body {
+        background-color: white;
+
+    }
+
+    /* IMG restaurant-le-jay */
+
+    .restaurant-le-jay {
+        width: 100%;
+        height: 33rem;
+        object-fit: cover;
+    }
+
+    .titre h1 {
+       text-align: center;
+    }
+
+    /* PAGE/COULEUR */
+
+    .couleur {
+        background-color: #F6F6F6;
+        display: block;
+    }
+
+    .page {
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    /* section titre */
+    .titre,
+    h1 {
+        justify-content: center;
+        font-family: "Shrikhand", serif;
+        font-size: italic;
+        font-style: unset;
+    }
+
+    .heart,
+    .heart-violet {
+        padding-left: 20rem;
+        padding-top: 0.2rem;
+    }
+
+    /* menu-section */
+    .menu-section {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding-left: 11rem;
+        padding-right: 11rem;
+    }
+
+    .chek {
+        align-items: center;
+    }
+
+    /* Footer */
+
+
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .mise-en-page {
+        display: flex;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        gap: 20px;
+    }
+
+    .padding {
+        order: 10;
+        padding-top: 7px;
+        padding-left: 80px;
+        padding-right: 30px;
+    }
+
+    .footer-image-Proposer-un-restaurant {
+        padding-bottom: 13px;
+    }
+
+    .footer-partenaire {
+        padding-bottom: 1px;
+    }
+    .footer-image {
+        padding-top: 7px;
+    }
+
+    // footer {
+    //     display: flex;
+    //     flex-direction: row;
+    //     align-items: center;
+    //     justify-content: end;
+    //     padding-right: 5rem;
+    // }
+
+    // .mise-en-page {
+    //     display: inline-flex;
+    //     gap: 15px;
+
+    // }
+
+    // .padding {
+    //     order: 10;
+    //     padding-left: 5rem;
+    //     padding-bottom: 7px;
+    //     padding-top: 15px;
+    // }
+
+    // .footer-image-Proposer-un-restaurant {
+    //     padding-bottom: 15px;
+    // }
+
+    // .footer-partenaire {
+    //     padding-bottom: 10px;
+    // }
+
+    // .footer-image {
+    //     padding-bottom: 12px;
+    // }
+
+}
