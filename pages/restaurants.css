@@ -440,6 +440,9 @@ img {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .titre h1 {
+    text-align: center;
+  }
   /* PAGE/COULEUR */
   .couleur {
     background-color: #F6F6F6;
