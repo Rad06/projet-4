@@ -214,6 +214,11 @@ a {
   transition: margin-right 1s;
 }
 
+.valide {
+  color: #99E2D0;
+  justify-content: center;
+}
+
 .button-un:hover .validation {
   margin-right: 0;
 }
@@ -223,30 +228,14 @@ a {
   border-radius: 50px;
   width: 25px;
   height: 25px;
+  transform: rotate(0);
+  transition: transform 0.9s;
 }
 
-.valide {
-  color: #99E2D0;
-  justify-content: center;
+.button-un:hover .cercle-blanc {
+  transform: rotate(360deg);
 }
 
-.button-un {
-  transition: transform 5s;
-}
-
-.cercle-blanc {
-  transform: rotate(0deg);
-  animation: spin 1s;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 .animation-delay-quatre {
   animation: progress-affichage 0.5s;
 }

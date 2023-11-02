@@ -228,43 +228,29 @@ a {
     text-align: center;
     transition: margin-right 1s;
 }
-
-.button-un:hover .validation {
-    margin-right: 0;
-}
-
-.cercle-blanc {
-    background-color: white;
-    border-radius: 50px;
-    width: 25px;
-    height: 25px;
-}
-
 .valide {
     color: #99E2D0;
     justify-content: center;
 }
 
-// ANIMATION ROTATION 
-
-.button-un {
-    transition: transform 5s;
+.button-un:hover .validation {
+    margin-right: 0;
 }
-
+// ANIMATION ROTATION
 .cercle-blanc {
-    transform: rotate(0deg);
-    animation: spin 1s;
+    background-color: white;
+    border-radius: 50px;
+    width: 25px;
+    height: 25px;
+    transform: rotate(0);
+    transition: transform 0.9s;
+
+
+}
+.button-un:hover .cercle-blanc {
+    transform: rotate(360deg);
 }
 
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
 
 // ANIMATION AFFICHAGE PROGRESSIVE
 
@@ -565,37 +551,6 @@ img {
         padding-top: 7px;
     }
 
-    // footer {
-    //     display: flex;
-    //     flex-direction: row;
-    //     align-items: center;
-    //     justify-content: end;
-    //     padding-right: 5rem;
-    // }
-
-    // .mise-en-page {
-    //     display: inline-flex;
-    //     gap: 15px;
-
-    // }
-
-    // .padding {
-    //     order: 10;
-    //     padding-left: 5rem;
-    //     padding-bottom: 7px;
-    //     padding-top: 15px;
-    // }
-
-    // .footer-image-Proposer-un-restaurant {
-    //     padding-bottom: 15px;
-    // }
-
-    // .footer-partenaire {
-    //     padding-bottom: 10px;
-    // }
-
-    // .footer-image {
-    //     padding-bottom: 12px;
-    // }
+   
 
 }
