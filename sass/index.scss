@@ -5,7 +5,6 @@
     --drak-grey-color: #353535;
     --pink: #FF79DA;
     --purple: #9356DC;
-    --font-family: "Roboto", sans-serif;
 }
 
 $pink: #FF79DA;
@@ -54,10 +53,10 @@ body {
 
 span {
     font-size: 16px;
-    font-weight: 500;
     line-height: 19px;
     letter-spacing: 0em;
     text-align: left;
+    font-weight: 570;
     color: #353535;
     text-decoration: none;
 }
@@ -85,7 +84,6 @@ a {
 }
 
 h1 {
-
     font-style: normal;
     font-weight: 700;
     line-height: 28.13px;
@@ -94,15 +92,11 @@ h1 {
 }
 
 .decouvrer {
-    font-family: "Roboto", sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 21px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #353535;
+    font-weight: 100;
+    line-height: 21.09px;
     padding-top: 15px;
     padding-bottom: 25px;
+    color: #353535;
 }
 
 .button-violet {
@@ -115,11 +109,10 @@ h1 {
     background: linear-gradient(to bottom, var(--pink), var(--purple));
     border-radius: 25px;
     box-sizing: border-box;
-    font-size: 16px;
+    font-style: normal;
     font-weight: 500;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: center;
+    font-size: 16px;
+    line-height: 18.75px;
     color: white;
     text-decoration: none;
     border: none;
@@ -146,6 +139,9 @@ h1 {
 }
 
 h2 {
+    // padding-top: 25px;
+    // padding-bottom: 20px;
+    // padding-left: 15px;
     margin: 0;
     padding: 0;
 }
@@ -153,12 +149,7 @@ h2 {
 .button-logo-mobile,
 .button-menu,
 .button-restaurant {
-    border-style: solid;
-    border-color: #F6F6F6;
-    border-width: 2px;
     border-radius: 20px;
-    // width: 322.49px;
-    // height: 72.38px;
     text-align: center;
     background-color: #F6F6F6;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
@@ -166,21 +157,23 @@ h2 {
     align-items: center;
     justify-content: center;
     font-weight: bolder;
-    width: 100%;
+  align-self: stretch;
 }
 
-.section-padding {
+.section-padding  {
     padding: 50px 20px;
 }
 
 h2 {
-    padding-bottom: 30px;
+padding-bottom: 30px;
 }
 
 .insertion {
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    padding-left: 35px;
 }
 
 .numero {
@@ -199,7 +192,6 @@ h2 {
 }
 
 .texte-noir {
-    font-family: "Roboto", sans-serif;
     color: #000000;
     text-decoration: none;
     font-size: 16px;
@@ -207,7 +199,6 @@ h2 {
     line-height: 18.75px;
     white-space: nowrap;
     text-align: left;
-
 }
 
 .images,
@@ -230,6 +221,12 @@ h2 {
     flex: 1;
     padding-bottom: 2rem;
 }
+
+// .titre-restaurants {
+//     align-self: start;
+//     padding-bottom: 0;
+//     padding-left: 20px;
+// }
 
 .mise-en-page-un {
     padding-bottom: 15px;
@@ -263,34 +260,33 @@ h2 {
     background-color: white;
     border-radius: 0px 0px 15px 15px;
     position: relative;
+    padding: 20px;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+      margin: -5px 0 ;
+  
 }
+.display-flex-white
 
 .display-flex-white,
 .typography,
 p {
-    margin: -5px;
+  
+    margin: 0 ;
     color: #000000;
-    padding-left: 10px;
+
 }
 
 .typography {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 21px;
-    letter-spacing: 0em;
-    text-align: left;
-    padding-top: 15px;
+
 }
 
 .paragraphe {
     font-size: 17px;
+    // padding-bottom: 15px;
+    // padding-top: 8px;
     font-weight: 300;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #000000;
-    padding-bottom: 15px;
-    padding-top: 8px;
 }
 
 .heart,
@@ -319,76 +315,59 @@ p {
 // FOOTER
 
 footer {
-    display: flex;
     background-color: #353535;
-    flex-direction: column;
-    align-items: start;
-    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+
+}
+
+.padding {
+    padding-top: 15px;
+    padding-left: 20px;
 }
 
 .footer-image-Proposer-un-restaurant h3,
 .footer-partenaire h3 {
     color: white;
-    width: 400;
     font-size: 16px;
     line-height: 18.75px;
     gap: 7px;
-    font-weight: 500px;
-    cursor: pointer;
-}
-
-.footer-image-Proposer-un-restaurant,
-h3 img {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-
-.footer-partenaire,
-h3 img {
-    display: flex;
-    align-items: center;
-    color: white;
-
-}
-
-.footer-image-Proposer-un-restaurant img,
-h3 {
-    display: flex;
-}
-
-.footer-image-Proposer-un-restaurant,
-img h3 {
-    margin-bottom: -5px;
-}
-
-.footer-image-Proposer-un-restaurant,
-.footer-partenaire,
-h3 {
-    font-family: "roboto", sans-serif;
     font-weight: 500;
-    size: 16px;
-    line-height: 18.75px;
-    gap: 7px;
-}
-
-.footer-partenaire h3,
-.footer-image-Proposer-un-restaurant,
-h3 {
-   
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-h3 {
     margin: 0;
 }
 
-.footer-image-Proposer-un-restaurant img,
-.footer-partenaire img {
-    margin-bottom: 2px;
+.footer-image-Proposer-un-restaurant {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 7px;
 }
 
-p {
+.footer-partenaire {
+    padding-left: 7px;
+}
+
+.footer-image {
+    padding-left: 8px;
+}
+
+.footer-partenaire,
+.alignement h3 {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+
+}
+
+.logo-proposer,
+.alignement {
+    height: 13px;
+    padding-right: 10px;
+    padding-left: 15px;
+}
+
+.footer-image p {
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
@@ -396,25 +375,13 @@ p {
     text-align: left;
     color: white;
     padding: 4px;
-    cursor: pointer;
-    margin: 0;
+    padding-left: 20px;
 }
 
-.padding,
-img {
-   padding-bottom: 5px;
-}
 
-.mise-en-page {
-    padding: 30px;
-    padding-bottom: 5px;
-}
 
-.logo-footer-white {
-    width: 139px;
-    height: 27px;
-    color: white;
-}
+
+
 
 
 
@@ -492,31 +459,23 @@ img {
         flex-direction: row;
         align-items: center;
         justify-content: end;
-    }
-
-    .mise-en-page {
-        display: flex;
-        padding-top: 50px;
-        padding-bottom: 20px;
-        gap: 20px;
+        padding-right: 5rem;
+        padding-top: 40px;
     }
 
     .padding {
         order: 10;
-        padding-top: 7px;
-        padding-left: 80px;
-        padding-right: 30px;
+        padding-left: 5rem;
+        padding-bottom: 7px;
+        padding-top: 10px;
     }
 
     .footer-image-Proposer-un-restaurant {
-        padding-bottom: 13px;
+        padding-bottom: 15px;
     }
 
     .footer-partenaire {
-        padding-bottom: 1px;
-    }
-    .footer-image {
-        padding-top: 7px;
+        padding-top: 10px;
     }
 
 }
