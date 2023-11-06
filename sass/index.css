@@ -15,41 +15,43 @@ body {
 
 .loader {
   position: fixed;
-  z-index: 100000;
+  z-index: 1000;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
   height: 100vh;
   background: linear-gradient(to bottom, var(--pink), var(--purple));
-  animation: loader 5s;
+  animation: loader 15s;
 }
 
 @keyframes loader {
   0% {
-    opacity: 100%;
+    opacity: 1;
   }
   100% {
     opacity: 0%;
-    background-color: white;
+    z-index: -1000;
   }
 }
 .animation-loader {
   height: 50px;
 }
 
-.loader,
-.animation-loader {
+.loader, .animation-loader {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  animation: loader 5s;
-  transform: rotate(0);
   opacity: 0;
 }
 
-@keyframes loader {
+.animation-loader {
+  animation: animation-loader 10s;
+  transform: rotate(0);
+}
+
+@keyframes animation-loader {
   0% {
     opacity: 1;
     transform: rotate(360deg);
