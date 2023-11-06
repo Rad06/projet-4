@@ -17,6 +17,50 @@ body {
     margin: 0;
 }
 
+.loader {
+    position: fixed;
+    z-index: 100000;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    background: linear-gradient(to bottom, var(--pink), var(--purple));
+    animation: loader 5s;
+}
+
+@keyframes loader {
+    0% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+        background-color: white;
+    }
+}
+
+.loader,
+.animation-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: loader 5s;
+    transform: rotate(0);
+    opacity: 0;
+}
+
+@keyframes loader {
+    0% {
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+}
+
 .container {
     max-width: 1080px;
 
@@ -157,15 +201,15 @@ h2 {
     align-items: center;
     justify-content: center;
     font-weight: bolder;
-  align-self: stretch;
+    align-self: stretch;
 }
 
-.section-padding  {
+.section-padding {
     padding: 50px 20px;
 }
 
 h2 {
-padding-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .insertion {
@@ -264,23 +308,20 @@ padding-bottom: 30px;
     gap: 5px;
     display: flex;
     flex-direction: column;
-      margin: -5px 0 ;
-  
-}
-.display-flex-white
+    margin: -5px 0;
 
-.display-flex-white,
+}
+
+.display-flex-white .display-flex-white,
 .typography,
 p {
-  
-    margin: 0 ;
+
+    margin: 0;
     color: #000000;
 
 }
 
-.typography {
-
-}
+.typography {}
 
 .paragraphe {
     font-size: 17px;
