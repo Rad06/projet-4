@@ -38,7 +38,8 @@ body {
   height: 50px;
 }
 
-.loader, .animation-loader {
+.loader,
+.animation-loader {
   display: flex;
   justify-content: center;
   align-items: center;
