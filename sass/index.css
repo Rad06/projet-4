@@ -22,7 +22,7 @@ body {
   bottom: 0;
   height: 100vh;
   background: linear-gradient(to bottom, var(--pink), var(--purple));
-  animation: loader 15s;
+  animation: loader 5s;
 }
 
 @keyframes loader {
