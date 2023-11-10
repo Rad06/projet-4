@@ -51,7 +51,8 @@ body {
 
 // img
 
-.restaurant-le-jay {
+.restaurant-cover {
+    height: 275px;
     top: 63px;
     object-fit: cover;
     width: 100%;
@@ -144,7 +145,6 @@ h2 .button-un {
     flex-direction: column;
     gap: 12px;
 }
-
 .button-un {
     display: flex;
     background-color: white;
@@ -157,6 +157,7 @@ h2 .button-un {
 
 .button,
 .description {
+   
     font-size: 15px;
     font-weight: 300;
     line-height: 18px;
@@ -166,6 +167,9 @@ h2 .button-un {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+}
+.button {
+    flex: 1;
 }
 
 .button,
@@ -459,11 +463,11 @@ img {
 
     }
 
-    /* IMG restaurant-le-jay */
+    /* IMG restaurant-cover */
 
-    .restaurant-le-jay {
+    .restaurant-cover {
         width: 100%;
-        height: 33rem;
+        height: 383px;
         object-fit: cover;
     }
 

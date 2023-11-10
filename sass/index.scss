@@ -26,7 +26,7 @@ body {
     bottom: 0;
     height: 100vh;
     background: linear-gradient(to bottom, var(--pink), var(--purple));
-    animation: loader 10s;
+    animation: loader 5s;
 }
 
 @keyframes loader {
@@ -35,7 +35,14 @@ body {
         opacity: 1;
         z-index: 1000;
     }
-
+    60% {
+        transform: scale(1);
+        opacity: 1;
+        z-index: 1000;
+    }
+99%{
+    z-index: 1000 ;
+}
     100% {
         transform: scale(0);
         opacity: 0%;

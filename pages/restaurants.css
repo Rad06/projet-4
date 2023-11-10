@@ -45,7 +45,8 @@ body {
   left: 25px;
 }
 
-.restaurant-le-jay {
+.restaurant-cover {
+  height: 275px;
   top: 63px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -153,6 +154,10 @@ h2 .button-un {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+
+.button {
+  flex: 1;
 }
 
 .button,
@@ -419,10 +424,10 @@ img {
   body {
     background-color: white;
   }
-  /* IMG restaurant-le-jay */
-  .restaurant-le-jay {
+  /* IMG restaurant-cover */
+  .restaurant-cover {
     width: 100%;
-    height: 33rem;
+    height: 383px;
     -o-object-fit: cover;
        object-fit: cover;
   }
