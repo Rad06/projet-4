@@ -26,7 +26,7 @@ body {
     bottom: 0;
     height: 100vh;
     background: linear-gradient(to bottom, var(--pink), var(--purple));
-    animation: loader 5s;
+    animation: loader 5s forwards;
 }
 
 @keyframes loader {
@@ -174,10 +174,11 @@ h1 {
     background: linear-gradient(to bottom, var(--pink), var(--purple));
     border-radius: 25px;
     box-sizing: border-box;
-    font-style: normal;
-    font-weight: 500;
     font-size: 16px;
-    line-height: 18.75px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
     color: white;
     text-decoration: none;
     border: none;
@@ -204,9 +205,6 @@ h1 {
 }
 
 h2 {
-    // padding-top: 25px;
-    // padding-bottom: 20px;
-    // padding-left: 15px;
     margin: 0;
     padding: 0;
 }
@@ -287,11 +285,6 @@ h2 {
     padding-bottom: 2rem;
 }
 
-// .titre-restaurants {
-//     align-self: start;
-//     padding-bottom: 0;
-//     padding-left: 20px;
-// }
 
 .mise-en-page-un {
     padding-bottom: 15px;
@@ -342,7 +335,6 @@ p {
 
 }
 
-.typography {}
 
 .paragraphe {
     font-size: 17px;
@@ -394,6 +386,7 @@ footer {
     gap: 7px;
     font-weight: 500;
     margin: 0;
+    cursor: pointer;
 }
 
 .footer-image-Proposer-un-restaurant {
@@ -417,6 +410,7 @@ footer {
     display: flex;
     align-items: center;
     padding-bottom: 10px;
+    cursor: pointer;
 
 }
 
@@ -436,6 +430,7 @@ footer {
     color: white;
     padding: 4px;
     padding-left: 20px;
+    cursor: pointer;
 }
 
 
@@ -488,10 +483,7 @@ footer {
     }
 
     // SECTION: RESTAURANTS
-    .titre-restaurants {
-        // padding-left: 10.9rem;
-    }
-
+    
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr;

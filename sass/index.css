@@ -21,7 +21,7 @@ body {
   bottom: 0;
   height: 100vh;
   background: linear-gradient(to bottom, var(--pink), var(--purple));
-  animation: loader 5s;
+  animation: loader 5s forwards;
 }
 
 @keyframes loader {
@@ -159,10 +159,11 @@ h1 {
   background: linear-gradient(to bottom, var(--pink), var(--purple));
   border-radius: 25px;
   box-sizing: border-box;
-  font-style: normal;
-  font-weight: 500;
   font-size: 16px;
-  line-height: 18.75px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
   color: white;
   text-decoration: none;
   border: none;
@@ -355,6 +356,7 @@ footer {
   gap: 7px;
   font-weight: 500;
   margin: 0;
+  cursor: pointer;
 }
 
 .footer-image-Proposer-un-restaurant {
@@ -378,6 +380,7 @@ footer {
   display: flex;
   align-items: center;
   padding-bottom: 10px;
+  cursor: pointer;
 }
 
 .logo-proposer,
@@ -396,6 +399,7 @@ footer {
   color: white;
   padding: 4px;
   padding-left: 20px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1025px) {
