@@ -1,21 +1,24 @@
 /*GENERAL*/
 :root {
-    --main-color: white;
-    --second-color: #EAEAEA;
-    --drak-grey-color: #353535;
+    $main-color: white;
+    $second-color: #EAEAEA;
+    $drak-grey-color: #353535;
     --pink: #FF79DA;
     --purple: #9356DC;
 }
 
+$main-color: white;
+$drak-grey-color: #353535;
 $pink: #FF79DA;
 $purple: #9356DC;
 // BODY
 
 body {
-    background-color: white;
+    background-color: $main-color;
     font-family: "Roboto", sans-serif;
     margin: 0;
 }
+
 // LOADER / ANIMATIONS
 
 .loader {
@@ -35,14 +38,17 @@ body {
         opacity: 1;
         z-index: 1000;
     }
+
     60% {
         transform: scale(1);
         opacity: 1;
         z-index: 1000;
     }
-99%{
-    z-index: 1000 ;
-}
+
+    99% {
+        z-index: 1000;
+    }
+
     100% {
         transform: scale(0);
         opacity: 0%;
@@ -50,9 +56,6 @@ body {
     }
 }
 
-.animation-loader {
-    height: 50px;
-}
 
 .loader,
 .animation-loader {
@@ -64,6 +67,7 @@ body {
 }
 
 .animation-loader {
+    height: 50px;
     animation: animation-loader-rotation 10s;
     transform: rotate(0);
 }
@@ -77,7 +81,7 @@ body {
     100% {
         opacity: 0;
         transform: rotate(0deg);
-        
+
 
     }
 }
@@ -93,14 +97,14 @@ body {
 .header-white {
     display: flex;
     justify-content: center;
-    background-color: white;
-}
+    background-color: $main-color;
 
-.header-white .logo-ohmyfood {
-    height: 36px;
-    width: 197px;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    .logo-ohmyfood {
+        height: 36px;
+        width: 197px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
 }
 
 .headerTextContent {
@@ -110,11 +114,12 @@ body {
     align-items: center;
     justify-content: center;
     text-decoration: none;
+
+    .pin {
+        display: block;
+    }
 }
 
-.headerTextContent img {
-    display: block;
-}
 
 span {
     font-size: 16px;
@@ -122,7 +127,7 @@ span {
     letter-spacing: 0em;
     text-align: left;
     font-weight: 570;
-    color: #353535;
+    color: $drak-grey-color;
     text-decoration: none;
 }
 
@@ -146,14 +151,15 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
 
-h1 {
-    font-style: normal;
-    font-weight: 700;
-    line-height: 28.13px;
-    color: #000000;
-    margin: 0;
+    h1 {
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28.13px;
+        color: #000000;
+        margin: 0;
+
+    }
 }
 
 .decouvrer {
@@ -161,7 +167,7 @@ h1 {
     line-height: 21.09px;
     padding-top: 15px;
     padding-bottom: 25px;
-    color: #353535;
+    color: $drak-grey-color;
 }
 
 .button-violet {
@@ -250,7 +256,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: $main-color;
 
 }
 
@@ -315,7 +321,7 @@ h2 {
 }
 
 .display-flex-white {
-    background-color: white;
+    background-color: $main-color;
     border-radius: 0px 0px 15px 15px;
     position: relative;
     padding: 20px;
@@ -367,7 +373,7 @@ p {
 // FOOTER
 
 footer {
-    background-color: #353535;
+    background-color: $drak-grey-color;
     padding-top: 15px;
     padding-bottom: 25px;
 
@@ -380,7 +386,7 @@ footer {
 
 .footer-image-Proposer-un-restaurant h3,
 .footer-partenaire h3 {
-    color: white;
+    color: $main-color;
     font-size: 16px;
     line-height: 18.75px;
     gap: 7px;
@@ -427,7 +433,7 @@ footer {
     line-height: 19px;
     letter-spacing: 0em;
     text-align: left;
-    color: white;
+    color: $main-color;
     padding: 4px;
     padding-left: 20px;
     cursor: pointer;
@@ -483,7 +489,7 @@ footer {
     }
 
     // SECTION: RESTAURANTS
-    
+
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr;

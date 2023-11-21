@@ -1,8 +1,5 @@
 /*GENERAL*/
 :root {
-  --main-color: white;
-  --second-color: #EAEAEA;
-  --drak-grey-color: #353535;
   --pink: #FF79DA;
   --purple: #9356DC;
 }
@@ -44,10 +41,6 @@ body {
     z-index: -1000;
   }
 }
-.animation-loader {
-  height: 50px;
-}
-
 .loader,
 .animation-loader {
   display: flex;
@@ -58,6 +51,7 @@ body {
 }
 
 .animation-loader {
+  height: 50px;
   animation: animation-loader-rotation 10s;
   transform: rotate(0);
 }
@@ -82,7 +76,6 @@ body {
   justify-content: center;
   background-color: white;
 }
-
 .header-white .logo-ohmyfood {
   height: 36px;
   width: 197px;
@@ -98,8 +91,7 @@ body {
   justify-content: center;
   text-decoration: none;
 }
-
-.headerTextContent img {
+.headerTextContent .pin {
   display: block;
 }
 
@@ -132,8 +124,7 @@ a {
   flex-direction: column;
   align-items: center;
 }
-
-h1 {
+.section-button h1 {
   font-style: normal;
   font-weight: 700;
   line-height: 28.13px;
