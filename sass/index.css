@@ -1,9 +1,4 @@
 /*GENERAL*/
-:root {
-  --pink: #FF79DA;
-  --purple: #9356DC;
-}
-
 body {
   background-color: white;
   font-family: "Roboto", sans-serif;
@@ -17,7 +12,7 @@ body {
   right: 0;
   bottom: 0;
   height: 100vh;
-  background: linear-gradient(to bottom, var(--pink), var(--purple));
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
   animation: loader 5s forwards;
 }
 
@@ -147,7 +142,7 @@ a {
   align-items: center;
   text-align: center;
   justify-content: center;
-  background: linear-gradient(to bottom, var(--pink), var(--purple));
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
   border-radius: 25px;
   box-sizing: border-box;
   font-size: 16px;
@@ -162,9 +157,7 @@ a {
   cursor: pointer;
   transition: all 400ms;
 }
-
-.button-violet:hover,
-.button-violet:focus {
+.button-violet:hover, .button-violet:focus {
   transform: scale(0.99);
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.35);
   background: linear-gradient(to bottom, #ff93e1, #a16be0);
@@ -321,10 +314,7 @@ p {
   opacity: 0;
   transition-duration: 1s;
 }
-
-.heart-violet:active,
-.heart-violet:hover,
-.heart-violet .selected {
+.heart-violet:active, .heart-violet:hover, .heart-violet .selected {
   opacity: 1;
 }
 

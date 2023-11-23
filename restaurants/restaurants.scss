@@ -1,14 +1,9 @@
 /*GENERAL*/
-:root {
-    --main-color: white;
-    --second-color: #EAEAEA;
-    --drak-grey-color: #353535;
-    --pink: #FF79DA;
-    --purple: #9356DC;
-}
-
+$main-color: white;
+$drak-grey-color: #353535;
 $pink: #FF79DA;
 $purple: #9356DC;
+
 /* Body */
 
 body {
@@ -23,31 +18,32 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: $main-color;
     position: relative;
+
+    img {
+        width: 197px;
+        height: 36px;
+        top: 14px;
+        left: 89px;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 36px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+
+        &.idd {
+            width: 17px;
+            height: 16px;
+            position: absolute;
+            top: 5px;
+            left: 25px
+        }
+    }
 }
 
-.header-white img {
-    width: 197px;
-    height: 36px;
-    top: 14px;
-    left: 89px;
-    gap: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 36px;
-    padding-top: 15px;
-    padding-bottom: 10px;
-}
-
-.header-white .idd {
-    width: 17px;
-    height: 16px;
-    position: absolute;
-    top: 5px;
-    left: 25px
-}
 
 // img
 
@@ -66,6 +62,7 @@ body {
     margin-top: -3rem;
     background-color: #F6F6F6;
     border-radius: 40px 40px 0 0;
+
 }
 
 .titre,
@@ -91,7 +88,7 @@ img h1 {
     height: 21px;
     top: 15px;
     left: 312px;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .titre {
@@ -109,12 +106,12 @@ img h1 {
 .heart-violet {
     opacity: 0;
     transition-duration: 1s;
-}
 
-.heart-violet:active,
-.heart-violet:hover,
-.heart-violet .selected {
-    opacity: 1;
+    &:active,
+    &:hover,
+    &.selected {
+        opacity: 1;
+    }
 }
 
 
@@ -145,9 +142,10 @@ h2 .button-un {
     flex-direction: column;
     gap: 12px;
 }
+
 .button-un {
     display: flex;
-    background-color: white;
+    background-color: $main-color;
     border-radius: 15.04px;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
     overflow: hidden;
@@ -157,7 +155,7 @@ h2 .button-un {
 
 .button,
 .description {
-   
+
     font-size: 15px;
     font-weight: 300;
     line-height: 18px;
@@ -168,6 +166,7 @@ h2 .button-un {
     text-overflow: ellipsis;
     overflow: hidden;
 }
+
 .button {
     flex: 1;
 }
@@ -213,7 +212,7 @@ a {
     line-height: 18px;
     letter-spacing: 0em;
     text-align: center;
-    color: #353535;
+    color: $drak-grey-color;
     margin-left: auto;
     padding-right: 10px;
 }
@@ -229,6 +228,7 @@ a {
     text-align: center;
     transition: margin-right 1s;
 }
+
 .valide {
     color: #99E2D0;
     justify-content: center;
@@ -237,9 +237,10 @@ a {
 .button-un:hover .validation {
     margin-right: 0;
 }
+
 // ANIMATION ROTATION
 .cercle-blanc {
-    background-color: white;
+    background-color: $main-color;
     border-radius: 50px;
     width: 25px;
     height: 25px;
@@ -248,6 +249,7 @@ a {
 
 
 }
+
 .button-un:hover .cercle-blanc {
     transform: rotate(360deg);
 }
@@ -326,7 +328,7 @@ a {
     align-items: center;
     text-align: center;
     justify-content: center;
-    background: linear-gradient(to bottom, var(--pink), var(--purple));
+    background: linear-gradient(to bottom, ($pink), ($purple));
     border-radius: 25px;
     box-sizing: border-box;
     font-size: 16px;
@@ -334,27 +336,27 @@ a {
     line-height: 19px;
     letter-spacing: 0em;
     text-align: center;
-    color: white;
+    color: $main-color;
     text-decoration: none;
     border: none;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
     cursor: pointer;
     transition: all 400ms;
-}
 
-.button-violet:hover,
-.button-violet:focus {
-    transform: scale(0.99);
-    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.35);
-    background: linear-gradient(to bottom, lighten($pink, 5%), lighten($purple, 5%));
+    &:hover,
+    &:focus {
+        transform: scale(0.99);
+        box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.35);
+        background: linear-gradient(to bottom, lighten($pink, 5%), lighten($purple, 5%));
 
+    }
 }
 
 // footer
 
 footer {
     display: flex;
-    background-color: #353535;
+    background-color: $drak-grey-color;
     flex-direction: column;
     align-items: start;
     padding-bottom: 15px;
@@ -362,7 +364,7 @@ footer {
 
 .footer-image-Proposer-un-restaurant h3,
 .footer-partenaire h3 {
-    color: white;
+    color: $main-color;
     font-size: 16px;
     line-height: 18.75px;
     gap: 7px;
@@ -381,7 +383,7 @@ h3 img {
 h3 img {
     display: flex;
     align-items: center;
-    color: white;
+    color: $main-color;
 
 }
 
@@ -428,7 +430,7 @@ p {
     line-height: 19px;
     letter-spacing: 0em;
     text-align: left;
-    color: white;
+    color: $main-color;
     padding: 4px;
     cursor: pointer;
     margin: 0;
@@ -447,7 +449,7 @@ img {
 .logo-footer-white {
     width: 139px;
     height: 27px;
-    color: white;
+    color: $main-color;
 }
 
 
@@ -459,7 +461,7 @@ img {
     /* BODY  */
 
     body {
-        background-color: white;
+        background-color: $main-color;
 
     }
 
@@ -472,7 +474,7 @@ img {
     }
 
     .titre h1 {
-       text-align: center;
+        text-align: center;
     }
 
     /* PAGE/COULEUR */
@@ -492,8 +494,8 @@ img {
     h1 {
         justify-content: center;
         font-family: "Shrikhand", serif;
-    //   font-style: italic;
        
+
     }
 
     .heart,
@@ -547,10 +549,11 @@ img {
     .footer-partenaire {
         padding-bottom: 1px;
     }
+
     .footer-image {
         padding-top: 7px;
     }
 
-   
+
 
 }

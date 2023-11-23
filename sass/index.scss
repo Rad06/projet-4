@@ -1,16 +1,10 @@
 /*GENERAL*/
-:root {
-    $main-color: white;
-    $second-color: #EAEAEA;
-    $drak-grey-color: #353535;
-    --pink: #FF79DA;
-    --purple: #9356DC;
-}
-
 $main-color: white;
 $drak-grey-color: #353535;
 $pink: #FF79DA;
 $purple: #9356DC;
+
+
 // BODY
 
 body {
@@ -28,7 +22,7 @@ body {
     right: 0;
     bottom: 0;
     height: 100vh;
-    background: linear-gradient(to bottom, var(--pink), var(--purple));
+    background: linear-gradient(to bottom, ($pink), ($purple));
     animation: loader 5s forwards;
 }
 
@@ -177,7 +171,7 @@ a {
     align-items: center;
     text-align: center;
     justify-content: center;
-    background: linear-gradient(to bottom, var(--pink), var(--purple));
+    background: linear-gradient(to bottom, ($pink), ($purple));
     border-radius: 25px;
     box-sizing: border-box;
     font-size: 16px;
@@ -191,15 +185,16 @@ a {
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
     cursor: pointer;
     transition: all 400ms;
+
+    &:hover,
+    &:focus {
+        transform: scale(0.99);
+        box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.35);
+        background: linear-gradient(to bottom, lighten($pink, 5%), lighten($purple, 5%));
+
+    }
 }
 
-.button-violet:hover,
-.button-violet:focus {
-    transform: scale(0.99);
-    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.35);
-    background: linear-gradient(to bottom, lighten($pink, 5%), lighten($purple, 5%));
-
-}
 
 // SECTIONWHITEBACKROUND
 
@@ -335,10 +330,8 @@ h2 {
 .display-flex-white .display-flex-white,
 .typography,
 p {
-
     margin: 0;
     color: #000000;
-
 }
 
 
@@ -361,12 +354,12 @@ p {
 .heart-violet {
     opacity: 0;
     transition-duration: 1s;
-}
 
-.heart-violet:active,
-.heart-violet:hover,
-.heart-violet .selected {
-    opacity: 1;
+    &:active,
+    &:hover,
+    & .selected {
+        opacity: 1;
+    }
 }
 
 

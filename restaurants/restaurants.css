@@ -1,12 +1,4 @@
 /*GENERAL*/
-:root {
-  --main-color: white;
-  --second-color: #EAEAEA;
-  --drak-grey-color: #353535;
-  --pink: #FF79DA;
-  --purple: #9356DC;
-}
-
 /* Body */
 body {
   background-color: #F6F6F6;
@@ -22,7 +14,6 @@ body {
   background-color: white;
   position: relative;
 }
-
 .header-white img {
   width: 197px;
   height: 36px;
@@ -36,8 +27,7 @@ body {
   padding-top: 15px;
   padding-bottom: 10px;
 }
-
-.header-white .idd {
+.header-white img.idd {
   width: 17px;
   height: 16px;
   position: absolute;
@@ -103,10 +93,7 @@ img h1 {
   opacity: 0;
   transition-duration: 1s;
 }
-
-.heart-violet:active,
-.heart-violet:hover,
-.heart-violet .selected {
+.heart-violet:active, .heart-violet:hover, .heart-violet.selected {
   opacity: 1;
 }
 
@@ -300,7 +287,7 @@ a {
   align-items: center;
   text-align: center;
   justify-content: center;
-  background: linear-gradient(to bottom, var(--pink), var(--purple));
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
   border-radius: 25px;
   box-sizing: border-box;
   font-size: 16px;
@@ -315,9 +302,7 @@ a {
   cursor: pointer;
   transition: all 400ms;
 }
-
-.button-violet:hover,
-.button-violet:focus {
+.button-violet:hover, .button-violet:focus {
   transform: scale(0.99);
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.35);
   background: linear-gradient(to bottom, #ff93e1, #a16be0);
