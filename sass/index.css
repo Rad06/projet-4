@@ -66,19 +66,18 @@ body {
   margin: 0 auto;
 }
 
-.header-white {
+header .header-white {
   display: flex;
   justify-content: center;
   background-color: white;
 }
-.header-white .logo-ohmyfood {
+header .header-white .logo-ohmyfood {
   height: 36px;
   width: 197px;
   padding-top: 20px;
   padding-bottom: 10px;
 }
-
-.headerTextContent {
+header .headerTextContent {
   background-color: #EAEAEA;
   box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.15) inset;
   display: flex;
@@ -86,11 +85,12 @@ body {
   justify-content: center;
   text-decoration: none;
 }
-.headerTextContent .pin {
-  display: block;
+header .headerTextContent .pin,
+header .headerTextContent span {
+  display: flex;
+  padding: 7px;
 }
-
-span {
+header .headerTextContent span {
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0em;
@@ -98,13 +98,6 @@ span {
   font-weight: 570;
   color: #353535;
   text-decoration: none;
-}
-
-.headerTextConten,
-.pin,
-span {
-  display: flex;
-  padding: 7px;
 }
 
 a {
@@ -323,14 +316,12 @@ footer {
   padding-top: 15px;
   padding-bottom: 25px;
 }
-
-.padding {
+footer .padding {
   padding-top: 15px;
   padding-left: 20px;
 }
-
-.footer-image-Proposer-un-restaurant h3,
-.footer-partenaire h3 {
+footer .footer-image-Proposer-un-restaurant h3,
+footer .footer-partenaire h3 {
   color: white;
   font-size: 16px;
   line-height: 18.75px;
@@ -339,39 +330,33 @@ footer {
   margin: 0;
   cursor: pointer;
 }
-
-.footer-image-Proposer-un-restaurant {
+footer .footer-image-Proposer-un-restaurant {
   display: flex;
   align-items: center;
   padding-top: 15px;
   padding-bottom: 10px;
   padding-left: 7px;
 }
-
-.footer-partenaire {
+footer .footer-partenaire {
   padding-left: 7px;
 }
-
-.footer-image {
+footer .footer-image {
   padding-left: 8px;
 }
-
-.footer-partenaire,
-.alignement h3 {
+footer .footer-partenaire,
+footer .alignement h3 {
   display: flex;
   align-items: center;
   padding-bottom: 10px;
   cursor: pointer;
 }
-
-.logo-proposer,
-.alignement {
+footer .logo-proposer,
+footer .alignement {
   height: 13px;
   padding-right: 10px;
   padding-left: 15px;
 }
-
-.footer-image p {
+footer .footer-image p {
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;

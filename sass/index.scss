@@ -87,50 +87,52 @@ body {
 }
 
 // HEADER
+header {
+    .header-white {
+        display: flex;
+        justify-content: center;
+        background-color: $main-color;
 
-.header-white {
-    display: flex;
-    justify-content: center;
-    background-color: $main-color;
+        .logo-ohmyfood {
+            height: 36px;
+            width: 197px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
 
-    .logo-ohmyfood {
-        height: 36px;
-        width: 197px;
-        padding-top: 20px;
-        padding-bottom: 10px;
     }
-}
 
-.headerTextContent {
-    background-color: #EAEAEA;
-    box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.15) inset;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
+    .headerTextContent {
+        background-color: #EAEAEA;
+        box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.15) inset;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
 
-    .pin {
-        display: block;
+        .pin,
+        span {
+            display: flex;
+            padding: 7px;
+        }
+
+
+        span {
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;
+            font-weight: 570;
+            color: $drak-grey-color;
+            text-decoration: none;
+        }
     }
+
 }
 
 
-span {
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left;
-    font-weight: 570;
-    color: $drak-grey-color;
-    text-decoration: none;
-}
 
-.headerTextConten,
-.pin,
-span {
-    display: flex;
-    padding: 7px;
-}
+
 
 a {
     text-decoration: none;
@@ -179,13 +181,12 @@ a {
     line-height: 19px;
     letter-spacing: 0em;
     text-align: center;
-    color: white;
+    color: $main-color;
     text-decoration: none;
     border: none;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
     cursor: pointer;
     transition: all 400ms;
-
     &:hover,
     &:focus {
         transform: scale(0.99);
@@ -244,7 +245,7 @@ h2 {
     position: absolute;
     top: calc(50% - 12px);
     left: -12px;
-    background-color: #9356DC;
+    background-color: $purple;
     border-radius: 50%;
     width: 24px;
     height: 24px;
@@ -370,7 +371,7 @@ footer {
     padding-top: 15px;
     padding-bottom: 25px;
 
-}
+
 
 .padding {
     padding-top: 15px;
@@ -433,7 +434,7 @@ footer {
 }
 
 
-
+}
 
 
 
